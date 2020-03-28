@@ -1,44 +1,135 @@
+/*
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*/
 
-body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
-  padding-left: 40px;
-  line-height: 2.3em;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Embedded fonts */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(fonts/Josefin_Sans/JosefinSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: normal;
+  src: url(fonts/Josefin_Sans/JosefinSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url(fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+
+
+/* formatting for all links */
+a {
+  font-family: 'Josefin Sans';
+  color: #888888;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+
+
+
+/* Header and Headings formats */
+header {
+  margin: 20px 40px;
+
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  letter-spacing: 2px;
+}
+h1 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+h2 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+
+/* Main format */
+main {
+  margin: 20px 40px;
+  padding: 0px 5px;
+
+  font-family: 'Merriweather';
+  line-height: 1.5em;
 
   background-image: url ("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
 }
 
-.our content {
-  max width: 600px;
-  margin: auto;
-  padding-top: 20px;
+
+/* Footer format */
+footer {
+  padding: 10px 0px;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #888888;
+}
+.copyright {
+  font-size: 12px;
+}
+.footer-nav {
+  padding: 10px;
+  font-family: 'Josefin Sans';
+  text-align: center;
 }
 
-ul {
+
+/* Navigation bar formatting */
+nav {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
 }
 
-li {
+nav li {
   float: left;
 }
-
-li a {
+nav a {
+  font-family: 'Josefin Sans';
   display: black;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 30px;
   text-decoration: none;
 }
-
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+nav a:hover {
+  color: #ffffff;
   background-color: #111;
 }
-.active {
+
+nav .active {
+  padding: 10px 0px;
   background-color: purple;
 }
