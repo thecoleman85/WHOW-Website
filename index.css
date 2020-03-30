@@ -1,4 +1,4 @@
-/*
+/*s
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 */
 
@@ -46,15 +46,19 @@ a:hover {
 
 /* Header and Headings formats */
 header {
-  margin: 20px 40px;
-
+  background-color: #fcfcfc;
+  /*margin: 20px 40px;*/
   font-family: 'Josefin Sans';
   font-style: italic;
   letter-spacing: 2px;
+
 }
 h1 {
+
   padding-top: 40px;
   padding-bottom: 10px;
+  padding-left: 40px;
+
 
   font-size: 60px;
   letter-spacing: 5px;
@@ -62,21 +66,32 @@ h1 {
 h2 {
   font-family: 'Montserrat';
   font-weight: bold;
-
   padding-top: 20px;
   padding-bottom: 15px;
+}
+h4 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-left: 40px;
 }
 
 
 /* Main format */
+body{
+  margin-top: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/background.jpg");
+}
+
 main {
+
   margin: 20px 40px;
   padding: 0px 5px;
 
   font-family: 'Merriweather';
   line-height: 1.5em;
 
-  background-image: url ("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
 }
 
 
