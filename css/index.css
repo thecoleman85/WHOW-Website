@@ -1,0 +1,172 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*/
+
+/*
+reset all elements
+*/ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Embedded fonts / Dependant on Browser */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(../fonts/Josefin_Sans/JosefinSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: normal;
+  src: url(../fonts/Josefin_Sans/JosefinSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+/* General formatting all links */
+a {
+  font-family: 'Josefin_Sans';
+  color: #888888;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+
+/* Header Formatting */
+header{
+	background-color: white;
+	font-family: "Josefin_Sans";
+	font-style: italic;
+	letter-spacing: 2px;
+	text-align: center;
+	
+	/* spacing between header and main */
+	padding-bottom: 10px;
+	padding-bottom: 40px;
+
+	/* spacing between edge of browser */
+  margin-top: 20px;
+	margin-left: 50px; 
+	margin-right:50px;
+}
+
+#logo {
+	padding-left: 20px;
+	float: left;
+}
+
+/* Navigation Formatting */
+nav{
+  text-align: right;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+/* Bodying Formatting / whole page */
+
+/* main Formatting / Content Area */
+main{
+  border-top: 10px solid #ef8f4f;
+  background-color: black;
+} 
+
+/* Image Gallery - Slideshow */
+
+/* Slideshow Container */
+.slideshow-container{
+  width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.image {
+  box-sizing: border-box;
+  display: none;
+  vertical-align: left;
+  position: left;
+}
+
+/* Side Text */
+.sideText {
+  float: right;
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+/* dot indicator */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2c363f;
+  border: 1px solid white;
+  border-radius: 80%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dotsFormat {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2c363f;
+}
+
+.active, .dot:hover {
+  background-color: #b4e8f5;
+}
+
+/* Fading animation */
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.1}
+  to {opacity: 1}
+}
+
+/* Footer Formatting / bottom of every page */
+footer {
+  margin-top: 50px;
+  margin: auto;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #888888;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.footer-nav {
+  padding: 10px;
+  font-family: 'Josefin Sans';
+  text-align: center;
+}
