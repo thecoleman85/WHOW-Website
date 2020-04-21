@@ -78,11 +78,69 @@ nav ul li{
 /* Bodying Formatting / whole page */
 
 /* main Formatting / Content Area */
+.mission {
+  background-color: #181717;
+  /*background-image: none;*/
+  text-align: center;
+  border-top: 10px solid #ef8f4f;
+  color: white;
+  height: 400px;
+}
 
+.mission h2{
+  padding: 150px 200px 30px 200px
+}
 
+.mission p{
+  padding-right: 200px;
+  padding-left: 200px;
+}
 
+.history {
+  background-color: #181717;
+  text-align: center;
+  border-top: 10px solid #d9dc9a;
+  color: white;
+  height: 400px;
+}
 
+.history h2{
+  color:#f0fe97;
+  /* Top right bottom left */
+  padding: 60px 200px 30px 200px;
+}
 
+.history p{
+  text-align: left;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.kickoff {
+  background-color: white;
+  text-align: center;
+  border-bottom: 10px solid #ef8f4f;
+}
+
+.kickoff h2{
+  color: #ed7d31;
+  padding: 60px 200px 30px 200px
+}
+
+.kickoff p{
+  text-align: left;
+  padding: 0px 200px 30px 200px
+}
+
+.kickoff ul{
+  text-align: left;
+  padding: 0px 200px 30px 220px
+}
+
+/* Podcast Formatting */
+.podcast {
+  padding: 0px 200px 40px 200px
+}
 
 /* Footer Formatting / bottom of every page */
 footer {
