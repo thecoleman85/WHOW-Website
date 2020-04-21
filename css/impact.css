@@ -78,7 +78,67 @@ nav ul li{
 /* Bodying Formatting / whole page */
 
 /* main Formatting / Content Area */
+.impact{
+  background-color: #181717;
+  text-align: center;
+  border-top: 10px solid #ef8f4f;
+  color: white;
+  height: 300px;
+}
 
+.impact h2{
+  color: #bfe7f3;
+  padding: 75px 200px 30px 200px
+}
+
+.impact p{
+  /* Top right bottom left */
+  padding: 0px 200px 30px 200px
+}
+
+/* Format Container so Local and international can be side by side */
+.impactContainer{
+  border-top: 10px solid #d9dc9a;
+  height: 400px;
+  padding: 30px 250px 30px 250px
+}
+
+.local {
+  padding-top: 20px;
+  float: left;
+}
+
+.local h2{
+  text-align: center;
+  padding-bottom: 20px;
+  color: #ed7d31;
+}
+
+.intern {
+  padding-top: 20px;
+  float: right;
+}
+
+.intern h2{
+  text-align: center;
+  padding-bottom: 20px;
+  color: #ed7d31;
+}
+
+/* Action Area */
+.action {
+  text-align: center;
+  color: #ed7d31;
+  border-bottom: 10px solid #ef8f4f;
+}
+
+.action h2{
+  padding-bottom: 20px;
+}
+
+iframe{
+  padding-bottom: 40px;
+}
 
 /* Footer Formatting / bottom of every page */
 footer {
