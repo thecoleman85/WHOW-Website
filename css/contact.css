@@ -78,9 +78,17 @@ nav ul li{
 /* Bodying Formatting / whole page */
 
 /* main Formatting / Content Area */
+.content{
+  border-top: 10px solid #ef8f4f;
+  background-color: #181717;
+  color: white;
+  padding: 40px 200px 40px 200px
+}
 
-
-
+/* Form Formatting */
+form{
+  border: 5px solid white;
+}
 
 
 
