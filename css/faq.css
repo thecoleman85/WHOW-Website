@@ -137,6 +137,7 @@ nav ul li{
 
 /* Footer Formatting / bottom of every page */
 footer {
+  border-top: 10px solid #ef8f4f;
   margin-top: 50px;
   margin: auto;
   padding: 10px 0px;
