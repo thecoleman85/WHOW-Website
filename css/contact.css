@@ -84,12 +84,11 @@ legend{
   text-align: center;
   font-size: 35px;
 }
+
 /* main Formatting / Content Area */
 .content{
   border-top: 10px solid #d9dc9a;
   padding: 40px 200px 40px 200px;
-  border-bottom: 10px solid #ef8f4f;
-
 }
 
 /* Form Formatting */
