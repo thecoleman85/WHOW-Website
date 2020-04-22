@@ -79,50 +79,59 @@ nav ul li{
 
 /* main Formatting / Content Area */
 .impact{
+  border-bottom: 10px solid #d9dc9a;
   background-color: #181717;
   text-align: center;
   border-top: 10px solid #ef8f4f;
   color: white;
-  height: 300px;
+  min-height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .impact h2{
+  margin: auto auto 0px;
   color: #bfe7f3;
-  padding: 75px 200px 30px 200px
+  max-width: 500px;
+  padding: 5px 80px;
 }
 
 .impact p{
-  /* Top right bottom left */
-  padding: 0px 200px 30px 200px
+  margin: 0px auto auto;
+  max-width: 500px;
+  padding: 5px 80px;
 }
 
 /* Format Container so Local and international can be side by side */
 .impactContainer{
-  border-top: 10px solid #d9dc9a;
-  height: 400px;
-  padding: 30px 250px 30px 250px
+  display: flex;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  padding: 0px 60px;
+  justify-content: space-between;
 }
 
 .local {
-  padding-top: 20px;
-  float: left;
+  padding: 20px 20px;
+  width: 40%;
 }
 
 .local h2{
-  text-align: center;
-  padding-bottom: 20px;
   color: #ed7d31;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .intern {
-  padding-top: 20px;
-  float: right;
+  padding: 20px 20px;
+  width: 40%;
 }
 
 .intern h2{
-  text-align: center;
-  padding-bottom: 20px;
   color: #ed7d31;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /* Action Area */

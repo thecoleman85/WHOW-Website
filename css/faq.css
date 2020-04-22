@@ -76,30 +76,30 @@ nav ul li{
 
 
 /* Bodying Formatting / whole page */
+.headM{
+  background-color: #181717;
+  text-align: center;
+  border-top: 10px solid #ef8f4f;
+  color: #bfe7f3;
+  height: 150px;
+  padding: 60px 200px 0px 200px;
+  font-size: 35px;
+}
 
 /* main Formatting / Content Area */
 .container{
-  background-color: #181717;
   text-align: center;
-  border-top: 10px solid #ef8f4f;
+  border-top: 10px solid #d9dc9a;
   color: white;
   height: 400px;
-  padding: 0px 200px 0px 200px;
+  padding: 60px 200px 0px 200px;
+  border-bottom: 10px solid #ef8f4f;
 }
 
-/*.faqc{
-  background-color: #181717;
-  text-align: center;
-  border-top: 10px solid #ef8f4f;
-  color: white;
-  height: 400px;
-  padding: 0px 200px 0px 200px;
-}*/
-
-/*/* button formatting */
+/* button formatting */
 .accordion {
-  background-color: white;
-  color: black;
+  background-color: #2c363f;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -108,6 +108,10 @@ nav ul li{
   outline: none;
   font-size: 15px; 
   transition: 0.4s;
+  margin: 5px;
+  border-radius: 10px;
+  border-style: double;
+  text-align: center;
 }
 
 .active, .accordion:hover {
