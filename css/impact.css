@@ -84,16 +84,22 @@ nav ul li{
   border-top: 10px solid #ef8f4f;
   color: white;
   height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .impact h2{
+  margin: auto auto 0px;
   color: #bfe7f3;
-  padding: 75px 200px 30px 200px
+  max-width: 500px;
+  padding: 5px 80px;
 }
 
 .impact p{
-  /* Top right bottom left */
-  padding: 0px 200px 30px 200px
+  margin: 0px auto auto;
+  max-width: 500px;
+  padding: 5px 80px;
 }
 
 /* Format Container so Local and international can be side by side */
