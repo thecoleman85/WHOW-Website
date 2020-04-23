@@ -78,6 +78,7 @@ nav ul li{
 /* Bodying Formatting / whole page */
 legend{
   border-top: 10px solid #ef8f4f;
+  border-bottom: 10px solid #d9dc9a;
   background-color: #181717;
   color: #bfe7f3;
   padding: 40px 200px 40px 200px;
@@ -87,14 +88,51 @@ legend{
 
 /* main Formatting / Content Area */
 .content{
-  border-top: 10px solid #d9dc9a;
-  padding: 40px 200px 40px 200px;
+  max-width: 400px;
+  align-content: center;
+  margin: auto;
+  padding: 40px 40px;
 }
 
 /* Form Formatting */
 form{
   border: 5px solid white;
-  text-align: center;
+}
+.form-textBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.form-textBox input{
+  min-width: 65%;
+}
+.form-dropDown{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.form-dropDown select{
+  min-width: 65%;
+}
+.form-radioButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 70px 0px;
+}
+.form-textArea{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.form-textArea label{
+  padding-bottom: 5px;
 }
 
 
