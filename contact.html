@@ -50,55 +50,42 @@
 					<!-- First Name Input -->
 					<div class="form-textBox">
 						<label for="fname">First Name:</label>
-						<br>
 						<input type="text" id="fname" name="fname" value="">
-						<br>
 					</div>
 
 					<!-- Last Name Input -->
 					<div class="form-textBox">
 						<label for="lname">Last Name:</label>
-						<br>
 						<input type="text" id="lname" name="lname" value="">
-						<br>
 					</div>
 
 					<!-- Email Input -->
 					<div class="form-textBox">
 						<label for="email">E-mail:</label>
-						<br>
 						<input type="text" id="email" name="email" value="">
-						<br>
 					</div>
 
 					<!-- Phone Number Input -->
 					<div class="form-textBox">
 						<label for="pnum">Phone Number:</label>
-						<br>
 						<input type="number" id="pnum" name="pnum" value="">
-						<br>
 					</div>
 
 					<!-- Address Input -->
 					<div class="form-textBox">
 						<label for="address">Address:</label>
-						<br>
 						<input type="text" id="address" name="address" value="">
-						<br>
 					</div>
 
 					<!-- City Input -->
 					<div class="form-textBox">
 						<label for="cname">City:</label>
-						<br>
 						<input type="text" id="cname" name="cname" value="">
-						<br>
 					</div>
 
 					<!-- State Input Options -->
 					<div class="form-dropDown">
 						<label for="state">State:</label>
-						<br>
 						<select name="state">
 				    		<option value=" " >Please select your state</option>
 				      		<option>Alabama</option>
@@ -153,38 +140,36 @@
 				      		<option>Wisconsin</option>
 				      		<option>Wyoming</option>
 				    	</select>
-						<br>
 					</div>
 
 					<!-- Zipcode Input -->
 					<div class="form-textBox">
 						<label for="zcode">Zip Code:</label>
-						<br>
 						<input type="number" id="zcode" name="zcode" value="">
-						<br>
 					</div>
 
 					<!-- Receive WHOW Minutes -->
 					<div class="form-radioButton">
 						<label alt="receiveMail">Would you like to receive WHOW Minutes?</label>
-						<br>
-						<input type="radio" id="yes" name="mail" value="yes">
-						<label for="yes">Yes</label>
-						<br>
-						<input type="radio" id="no" name="mail" value="no">
-						<label for="no">No</label>
-						<br>
+						<div class="list">
+							<div class="radioButtons">
+								<input type="radio" id="yes" name="mail" value="yes">
+								<label for="yes">Yes</label>
+							</div>
+							<div class="radioButtons">
+								<input type="radio" id="no" name="mail" value="no">
+								<label for="no">No</label>
+							</div>
+						</div>
 					</div>
 
 					<!-- Tell us about You Input -->
 					<div class="form-textArea">
 						<label for="about">Tell us about you:</label>
-						<br>
 						<textarea name="message" rows="10" cols="30"></textarea>
-						<br>
-						<input type="submit">
-						<br>
 					</div>
+
+					<input type="submit">
 
 				</form>
 			</div>
