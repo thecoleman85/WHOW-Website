@@ -152,9 +152,6 @@ nav ul li{
 
 /* Podcast Formatting */
 .podcast {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 1200px;
   margin: 40px auto 40px;
   padding: 0px 40px;
