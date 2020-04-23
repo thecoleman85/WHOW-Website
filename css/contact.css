@@ -124,7 +124,7 @@ form{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 70px 0px;
+  padding: 5px 100px 0px;
 }
 .form-textArea{
   display: flex;
