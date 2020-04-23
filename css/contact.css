@@ -76,11 +76,26 @@ nav ul li{
 
 
 /* Bodying Formatting / whole page */
+legend{
+  border-top: 10px solid #ef8f4f;
+  background-color: #181717;
+  color: #bfe7f3;
+  padding: 40px 200px 40px 200px;
+  text-align: center;
+  font-size: 35px;
+}
 
 /* main Formatting / Content Area */
+.content{
+  border-top: 10px solid #d9dc9a;
+  padding: 40px 200px 40px 200px;
+}
 
-
-
+/* Form Formatting */
+form{
+  border: 5px solid white;
+  text-align: center;
+}
 
 
 
