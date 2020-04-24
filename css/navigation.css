@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Embedded fonts / Dependant on Browser */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url(../fonts/Josefin_Sans/JosefinSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: normal;
+  src: url(../fonts/Josefin_Sans/JosefinSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+
+/* Header formatting / top of every page */
+header{
+  background-color: white;
+  font-family: "Josefin_Sans";
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px 20px;
+}
+
+header a{
+  padding: 0px;
+}
+
+.nav-links{
+  list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 5px;
+}
+.nav-links li:last-child{
+  padding-right: 0px;
+}
+.nav-links li a{
+  padding: 0px 10px;
+}
+.nav-links li a:hover {
+  color: #000000;
+}
+
+/* Footer Formatting / bottom of every page */
+footer {
+  border-top: 10px solid #ef8f4f;
+  margin-top: 50px;
+  margin: auto;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.footer-nav {
+  font-family: 'Josefin Sans';
+  color: #888888;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.footer-nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  color: blue;
+}
+
+
+
