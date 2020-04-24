@@ -43,6 +43,7 @@ a:hover {
 }
 
 /* Header Formatting */
+/*
 header{
 	background-color: white;
 	font-family: "Josefin_Sans";
@@ -50,11 +51,11 @@ header{
 	letter-spacing: 2px;
 	text-align: center;
 	
-	/* spacing between header and main */
+	/* spacing between header and main 
 	padding-bottom: 10px;
 	padding-bottom: 40px;
 
-	/* spacing between edge of browser */
+	/* spacing between edge of browser 
   margin-top: 20px;
 	margin-left: 50px; 
 	margin-right:50px;
@@ -65,13 +66,49 @@ header{
 	float: left;
 }
 
-/* Navigation Formatting */
+/* Navigation Formatting 
 nav{
   text-align: right;
 }
 
 nav ul li{
 	display: inline-block;
+}
+*/
+
+header{
+  background-color: white;
+  font-family: "Josefin_Sans";
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px 20px;
+}
+
+header a{
+  padding: 0px;
+}
+
+#logo{
+  padding-right: 20px;
+}
+
+.nav-links{
+  list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 5px;
+}
+.nav-links li:last-child{
+  padding-right: 0px;
+}
+.nav-links li a{
+  padding: 0px 10px;
 }
 
 
@@ -81,7 +118,7 @@ nav ul li{
   /*background-image: none;*/
   border-top: 10px solid #ef8f4f;
   color: white;
-  height: 400px;
+  min-height: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -101,11 +138,12 @@ nav ul li{
   padding: 5px 80px;
 }
 
+
 .history {
   background-color: #181717;
   border-top: 10px solid #d9dc9a;
   color: white;
-  min-height: 400px;
+  min-height: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -124,6 +162,7 @@ nav ul li{
   margin: 0px auto auto;
   padding: 5px 80px;
 }
+
 
 .kickoff {
   background-color: white;
@@ -150,6 +189,7 @@ nav ul li{
   padding: 10px 120px;
 }
 
+
 /* Podcast Formatting */
 .podcast {
   max-width: 1200px;
@@ -162,7 +202,7 @@ footer {
   border-top: 10px solid #ef8f4f;
   margin-top: 50px;
   margin: auto;
-  padding: 10px 0px;
+  padding: 10px 0px 20px 0px;
   text-align: center;
   font-family: 'Montserrat';
   color: #888888;
@@ -173,7 +213,9 @@ footer {
 }
 
 .footer-nav {
-  padding: 10px;
   font-family: 'Josefin Sans';
+  color: #888888;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
