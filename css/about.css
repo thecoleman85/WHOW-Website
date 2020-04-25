@@ -31,85 +31,6 @@ reset all elements
   src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 
-/* General formatting all links */
-a {
-  font-family: 'Josefin_Sans';
-  color: #888888;
-  padding: 10px 30px;
-  text-decoration: none;
-}
-a:hover {
-  color: #000000;
-}
-
-/* Header Formatting */
-/*
-header{
-	background-color: white;
-	font-family: "Josefin_Sans";
-	font-style: italic;
-	letter-spacing: 2px;
-	text-align: center;
-	
-	/* spacing between header and main 
-	padding-bottom: 10px;
-	padding-bottom: 40px;
-
-	/* spacing between edge of browser 
-  margin-top: 20px;
-	margin-left: 50px; 
-	margin-right:50px;
-}
-
-#logo {
-	padding-left: 20px;
-	float: left;
-}
-
-/* Navigation Formatting 
-nav{
-  text-align: right;
-}
-
-nav ul li{
-	display: inline-block;
-}
-*/
-
-header{
-  background-color: white;
-  font-family: "Josefin_Sans";
-  font-style: italic;
-  letter-spacing: 2px;
-  text-align: center;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px 20px;
-}
-
-header a{
-  padding: 0px;
-}
-
-#logo{
-  padding-right: 20px;
-}
-
-.nav-links{
-  list-style: none;
-}
-.nav-links li{
-  display: inline-block;
-  padding: 0px 5px;
-}
-.nav-links li:last-child{
-  padding-right: 0px;
-}
-.nav-links li a{
-  padding: 0px 10px;
-}
 
 
 /* Bodying Formatting / whole page */
@@ -197,25 +118,5 @@ header a{
   padding: 0px 40px;
 }
 
-/* Footer Formatting / bottom of every page */
-footer {
-  border-top: 10px solid #ef8f4f;
-  margin-top: 50px;
-  margin: auto;
-  padding: 10px 0px 20px 0px;
-  text-align: center;
-  font-family: 'Montserrat';
-  color: #888888;
-}
 
-.copyright {
-  font-size: 12px;
-}
 
-.footer-nav {
-  font-family: 'Josefin Sans';
-  color: #888888;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-}
