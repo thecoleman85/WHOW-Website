@@ -1,67 +1,108 @@
 <!DOCTYPE HTML>
-
 <html>
-  
-  <head>
-    <meta charset="UTF-8">
-    <title>WHOW See The Impact</title>
-    <link rel="stylesheet" href="styles/impact.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-  
-  <body>
-    <header>
-      <h1>WHOW</h1>
-      <h4>Women Helping Other Women</h4>
-    </header>
+		<!-- Tab Title -->
+		<title>WHOW</title>
 
-    <nav>
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About us</a></li>
-        <li class="active"><a href="impact.html">See The Impact</a></li>
-        <li class="active"><a href="faq.html">FAQ</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+		<!-- Link to CSS -->
+		<link rel="stylesheet" href="css/general.css"/>
+		<link rel="stylesheet" href="css/impact.css"/>
+		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+	</head>
 
-    <main>
-      <h1>See The Impact</h1>
-      <h2>A Map goes here</h2>
-      
-      <h3>Local organizations we've helped</h3>
-      <ul>
-        <li>Rochester Health Commons</li>
-        <li>Rochester Women's Shelter</li>
-        <li>Refugee Resettlement Program (through Catholic Charities)</li>
-        <li>Migrant Health Services</li>
-        <li>Medical Mission Warehouse</li>
-        <li>Community Food Response</li>
-        <li>Jeremiah Program</li>
-        <li>Rochester Cares Warming Center</li>
-        <li>Channel One</li>
-      </ul>
+	<!-- Body and whole page of the website -->
+	<body>
 
-      <h3>International Organizations we've helped</h3>
-      <ul>
-        <li>Hands For Humanity (Ecuador)</li>
-        <li>Harvesters Reaching The Nations (South Sudan)</li>
-        <li>Heifer International (Cambodia)</li>
-        <li>Seeds of Wisdom School (South Sudan, Uganda)</li>
-        <li>Global Health Ministries (Worldwide)</li>
-        <li>Zinga Tanzania</li>
-      </ul>
+		<!-- Header of the page with logo and nav bar (same as the home page) -->
+		<header>
+			<!-- Logo -->
+			<a href="index.html">
+				<div id="logo">
+					<h1>WHOW</h1>
+					<h4>Women Helping Other Women</h4>
+				</div>
+			</a>
 
-      <h3>See us in action</h3>
-      <p>embedded video with captions goes here</p>
+			<!-- Navigation Bar -->
+			<nav>
+		    	<ul>
+		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
+		        	<li onclick="currentNav(3)"><a class="activeN" href="impact.html">See The Impact</a></li>
+		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+		    	</ul>
+		    </nav>
+		</header>
 
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209458740738039%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+		<!-- Main content of page -->
+		<main>
+			<!-- Section off each part to design -->
+			<div class="impact">
+				<h2>See the Impact</h2>
+				<p>Here are some of the organizations we've helped over the years, both in Rochester and around the world.</p>
+			</div>
 
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209044845950928%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-    
-    </main>
-  
-  </body>
+			<!-- Put the Local and International into a Div to put them side by side -->
+			<div class="impactContainer">
+				<!-- Align Local Div to the left side -->
+				<div class="local">
+					<h2>Local</h2>
+
+					<!-- Bullet point list -->
+					<ul>
+				        <li><a href="https://www.bethellutheran.org/rochester-health-commons/" rel="noopener noreferrer" target="_blank">Rochester Health Commons<a></li>
+  <li><a href="https://www.womens-shelter.org/" rel="noopener noreferrer" target="_blank">Rochester Women's Shelter<a></li>
+  <li><a href="https://www.ccsomn.org/programs/refugee-resettlement-program/" rel ="noopener noreferrer" target="_blank">Refugee Resettlement Program<a> (through Catholic Charities)</li>
+  <li><a href="http://chsiclinics.org/" rel ="noopener noreferrer" target="_blank">Migrant Health Services<a> (aka Community Health Service)</li>
+  <li><a href="https://panjiva.com/Rochester-Medical-Mission/1655491" rel ="noopener noreferrer" target="_blank">Rochester Medical Mission</li>
+  <li><a href="https://www.communityfoodresponse.org/" rel="noopener noreferrer" target="_blank">Community Food Response<a></li>
+  <li><a href="https://jeremiahprogram.org/rochester/" rel="noopener noreferrer" target="_blank">Jeremiah Program<a></li>
+  <li><a href="https://www.ccsomn.org/programs/warming-centers/rochester-community-warming-center/rochester-cares-rcwc/" rel="noopener noreferrer" target="_blank">Rochester Cares Warming Center<a></li>
+  <li><a href="https://www.helpingfeedpeople.org/" rel="noopener noreferrer" target="_blank">Channel One<a></li>
+	     			</ul>
+				</div>
+
+				<!-- Align International Div to the right side -->
+				<div class="intern">
+					<h2>International</h2>
+					<!-- Bullet Point List -->
+					<ul>
+				        <li><a href="http://handsforhumanity.com/wordpress/" rel="noopener noreferrer" target="_blank">Hands For Humanity<a> (Ecuador)</li>
+  <li><a href="https://www.hrtn.org/" rel="noopener noreferrer" target="_blank">Harvesters Reaching The Nations<a> (South Sudan, Uganda)</li>
+  <li><a href="https://www.heifer.org/" rel="noopener noreferrer" target="_blank">Heifer International<a> (Cambodia)</li>
+  <li><a href="https://www.seedsofwisdomschool.org" rel="noopener noreferrer" target="_blank">Seeds of Wisdom School<a> (South Sudan, Uganda)</li>
+  <li><a href="https://www.ghm.org/" rel="noopener noreferrer" target="_blank">Global Health Ministries<a> (Worldwide)</li>
+  <li><a href="https://www.ihptz.org/" rel="noopener noreferrer" target="_blank">International Health Partners - US Inc.<a> (Zinga, Tanzania)<a></li>
+				    </ul>
+
+				</div>
+			</div> <!-- End Container -->
+
+			<div class="action">
+				<h2>See Us in Action</h2>
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209458740738039%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209044845950928%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+     
+			</div>
+		</main>
+
+		<!-- Footer / end of page (same as home page) -->
+		<footer>
+			<!-- Footer Navigation -->
+			<div class="footer-nav">
+		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		    </div>
+
+		    <!-- Copyright Section -->
+		    <div class="copyright">
+		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
+	      	</div>
+		</footer>
+
+	</body>
 
 </html>

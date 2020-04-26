@@ -1,67 +1,165 @@
 <!DOCTYPE HTML>
-
 <html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-  <head>
-    <meta charset="UTF-8">
-    <title>WHOW About Us</title>
-    <link rel="stylesheet" href="styles/about.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+		<!-- Tab Title -->
+		<title>WHOW</title>
 
+		<!-- Link to CSS -->
+		<link rel="stylesheet" href="css/navigation.css"/>
+		<link rel="stylesheet" href="css/about.css"/>
+		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+	</head>
 
-  <body>
+	<!-- Body and whole page of the website -->
+	<body>
 
-    <header>
-      <h1>WHOW</h1>
-      <h4>Women Helping Other Women</h4>
-    </header>
+		<!-- Header of the page with logo and nav bar (same as the home page) -->
+		<header>
+			<!-- Logo -->
+			<a href="index.html">
+				<div id="logo">
+					<h1>WHOW</h1>
+					<h4>Women Helping Other Women</h4>
+				</div>
+			</a>
 
-    <nav>
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About us</a></li>
-        <li class="active"><a href="impact.html">See The Impact</a></li>
-        <li class="active"><a href="faq.html">FAQ</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+			<!-- Navigation Bar -->
+			<nav class="navbar">
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+		    	<ul class="nav-links">
+		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+		        	<li onclick="currentNav(2)"><a class="activeN" href="about.html">About us</a></li>
+		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
+		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+		    	</ul>
+		    </nav>
 
-    <main>
-      <h2>About Us</h2>
+		    <!-- Javascript for mobile "hamburger" toggle -->
+		    <script src="js/toggle.js"></script>
 
-      <h3>Mission</h3>
-      <p>WHOW is a local grassroots organization of Rochester women with the common goal of helping women in Rochester and around the world.</p>
+		</header>
 
-      <h3>History</h3>
-      <p>WHOW was formed in October 2010 as a spinoff from a longtime Rochester women’s bookclub.  Inspired by the book Half the Sky, by renowned Pulitzer Prize winning journalists Nicholas Kristof and Sheryl WuDunn, the host of that meeting asked if others were interested in forming a group that would make a difference for women in the world.  She also asked other women she knew and hosted a kickoff meeting.</p>
+		<!-- Main content of page -->
+		<main>
 
-      <h3>The Kickoff</h3>
-      <p>On Saturday October 23, several of these women met for a kitchen table discussion of what we – collectively and individually -- wanted this group to be and do. These were busy women, many still working and/or volunteering full time.  All were women of action, women with a lifelong love of learning and women who truly cared about the world. We agreed immediately that we wanted to give in multiple ways, besides writing checks. We all knew the power of volunteering, sharing resources, skills, and in-kind giving. Two hours later, WHOW had sufficiently formed a simple plan:</p>
+			<!-- Section off each part to design -->
+			<div class="mission">
+				<h2>Our Mission</h2>
+				<p>WHOW is a local grassroots organization of Rochester women with the common goal of helping women in Rochester and around the world.</p>
+			</div>
 
-      <ul>
-        <li>The focus would be women.</li>
-        <li>The name evolved quickly: Women Helping Other Women.</li>
-        <li>WHOW would help women both locally and internationally.</li>
-        <li>Once a month the group would meet for 1 ½ hours.</li>
-        <li>Each meeting would focus on a local project and an international project.</li>
-        <li>Between meetings, work on those projects would be done by individual members with occasional work sessions for sewing, assembling a variety of kits for those in need, etc...</li>
-      </ul>
+			<div class="history">
+				<h2>History</h2>
+				<p>WHOW was formed in October 2010 as a spinoff from a longtime Rochester women’s book club.  Inspired by the book <a href=“http://www.halftheskymovement.org/“ rel="noopener noreferrer" target="_blank">Half the Sky</a>, by renowned Pulitzer Prize winning journalists Nicholas Kristof and Sheryl WuDunn, the host of that meeting asked if others were interested in forming a group that would make a difference for women in the world.  She also asked other women she knew and hosted a kickoff meeting.</p>
+			</div>
 
-      <h3>Interview</h3>
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/785542915&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<div class="kickoff">
+				<h2>The KickOff</h2>
+				<p>On Saturday October 23, several of these women met for a kitchen table discussion of what we – collectively and individually -- wanted this group to be and do. These were busy women, many still working and/or volunteering full time.  All were women of action, women with a lifelong love of learning and women who truly cared about the world. We agreed immediately that we wanted to give in multiple ways, besides writing checks. We all knew the power of volunteering, sharing resources, skills, and in-kind giving. Two hours later, WHOW had sufficiently formed a simple plan:</p>
 
-    </main>
+				<ul>
+			        <li>The focus would be women.</li>
+			        <li>The name evolved quickly: Women Helping Other Women.</li>
+			        <li>WHOW would help women both locally and internationally.</li>
+			        <li>Once a month the group would meet for 1 ½ hours.</li>
+			        <li>Each meeting would focus on a local project and an international project.</li>
+			        <li>Between meetings, work on those projects would be done by individual members with occasional work sessions for sewing, assembling a variety of kits for those in need, etc...</li>
+		      	</ul>
 
-    <footer>
-      <div class="footer-nav">
-        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-      </div>
-      <div class="copyright">
-        <p><em>Copyright &copy; 2020 WHOW</em></p>
-      </div>
-    </footer>
+			</div>
+			<!-- Podcast Section -->
+		    <div class="podcast">
+		    	<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/785542915&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+		    </div>
 
-  </body>
+<!---Podcast Transcript-->
+
+		    <div class="transcript">
+		    	<h2>Podcast Transcript</h2>
+
+<p>I'm talking to one of the founders of WHOW.</p>
+
+<p>Q: Tell me, what was it like before WHOW? What led up to WHOW?</p>
+
+</p>A: That's a really good question. There were...uh, there's a bookclub that had been going on for about 30 years in Rochester[Minnesota] and I'm a member of that, and it's all women. And these were all very busy and very involved in the community. At that time, many were still working, volunteering a lot, had grandchildren, adult children, or older parents. So we were all busy women. But we had one thing in common: that we all wanted to make a difference in the world. But we were each kind of trying to do it in our way, in the community organizations that we happened to be involved with.</p> 
+
+<p>But then, we read a book called "Half The Sky" and I'll tell you what. It was just so inspiring for all of us because it was about women's issues all over the world -- in the United States, but also in countries all over the world. And it was very globally thinking. And you might think, "Oh, that would be a depressing book. But it wasn't because at the end of each chapter it told about some organization in that particular country or village or community that was doing something about it, often led by a woman. So it was a perfect book for our women's bookclub to read. And it just so happened that the leader of that bookclub discussion said, "You know what? I just feel that I have not been doing enough. I mean, it's one thing to write a check to various organizations, and I do plenty of that. And all that...but I just want to do more. So if anyone else feels that way, I'm just going to send around a sign-up sheet, and if you're at all interested, just go ahead and put your name. Nothing formal, nothing where you have to be on a Board or anything." And a whole bunch of us signed up. Out of a group of, uhh...I think there were 19 of us there that night if I remember right, and (light chuckle) like, 12 or 13 of us said "Yeah!" and signed our name and phone number for her to call us.</p>
+
+<p>The following Saturday she pulled together a meeting. And it was those women along with other women friends of hers that she knew through other groups: her church, and this and that, and she pulled us together and said that this was only going to be 2 hours on a Saturday morning, it's not going to be anything formal; just wear what you have on, we'll have coffee and we'll talk. About what this group could look like, and what goals, if we have any, that we would like to set. So that Saturday morning was such a turning point in my mind and in my life. Because years and years ago, I had wanted to join the Peace Corps. And I was very idealistic about wanting to teach migrant children all over the country; I had done a paper on that in college, ummm. But none of those opportunities came my way because (chuckles) I was truly a starving student. So this burning desire to do something in the world, and make a difference, ya know we can't all be Mother Teresa. And that's how we all felt. We were all busy women and yet we wanted to do something. So around the table the ideas just flowed! You know, once in a while an idea comes along whose time has come. And that's how that morning was. Within two hours we had settled on a NAME: Women Helping Other Women. We knew we wanted to focus on women, so it's W.H.O.W.. Women Helping Other Women. We immediately talked about organizations that we wanted to help. And we all just shared organizations that we were already involved in around the community or around the world.  And lo and behold, within literally minutes, we said let's focus on one LOCAL project and one GLOBAL project every month. And we'll meet once a month, but in between, we can do activities: we can sew, or gather things that are needed, or um, you know, do mailings, or anything. We just agreed on so much! Within two hours we had the name of it, when we were gonna meet--the meetings are an hour and a half the 2nd Thursday of every month, so everyone could remember it. And ever since then we've been doing that. And it has been so fulfilling to me personally. I remember that I was unemployed right then. I had always worked full-time, and it was so fulfilling to me to be doing something with my time that was meaningful and not "morking" [moping] around the house, and sending resumes, and not getting anywhere. I mean...it was 2010, the country was tanked. I just remember that it filled a BIG space in my life. It gave me fulfillment, and excitement, and camaraderie with these other women, and doing something GOOD for the world. So, it's called a "game changer", but for me it was a LIFE changer!</p>
+
+</p>Q: And so, that was 8 - 10 years ago? (A."Yeah.") What's it like now?</p>
+
+<p>A: Ah, we still meet once a month for an hour and a half. We have [chuckling] really fun meetings! There's a lot of laughter. You might think, "Ohhh...everyone's probably just sitting around crying and praying." And we don't at all. We're all very positive, outgoing women and we already know each other. And we're doing all these projects and we're making such a difference -- just our little group! We purposely did not to start a nonprofit by ourselves. We just said, you know what? There's enough great organizations, locally and worldwide, already out there doing good work. We don't need to start another one. Let's just help these NGO's [non-government organizations].</p>
+
+<p>So we do these projects every month. We're usually working on something for Ecuador or Tanzania. Or Peru, or one time we did one for Cambodia. So literally touching places all over the world. And then LOCALLY, oh my gosh, we're helping the Women's Shelter. Also a really cool organization and we're helping young girls stay off the streets. And we didn't start the group; we're just supporting their needs.</p>
+
+<p>Q: And what's the name of that organization?</p>
+
+<p>A: That one is called Mission 21. And ahh, I remember crying when we...um, we often have a speaker come in and talk about what their organization does. And then after the speaker leaves, we make a decision whether that's something we want to take on. Also, we don't want to be scattergun approach, so we almost always support something that someone in our WHOW group knows someone in that organization really well. Or they've traveled to that country, they've been to that clinic or church, they've held babies in Haiti. One of our members was in Haiti [as a volunteer] when the earthquake struck, for God's sake!</p>
+
+<p>So what's it like now is that we all feel that we ARE making a difference in the world, in our own small way. And we're always kind of astounded when we look at a map of the world or a globe and we realize how many countries we've touched, how many people's lives we've touched. It's a very fulfilling, and exciting, and a very promising feeling for each and every one of us.</p>
+
+<p>Q: And what would you say is a highlight for the group? or for you personally?</p>
+
+<p>A: Ohhhh, I'll tell you what. Through a series of serendipity circumstances we were working with a local [WHOW] member who was very involved on a Board of an organization that was creating a brand new SCHOOL in the newest country on the PLANET: South Sudan! And she had been on this Board for a long time. And all of a sudden, it came to fruition. The school building was built, and we had done things for school supplies for it, and so on. We had sponsored one person to be able to go [on the trip], and it was our member. And she's a nurse, so she did things with the children to get their baseline measurements of their head, and their wrist, and it sounds silly, but also teaching them to brush their teeth and certain hygiene things. And she loves children, and she's a nurse, so she did that.</p>
+
+<p>But simultaneously, I myself personally really, really have this thing, absolute obsession about water around the world. About how we take it so for granted in the United States. And how many countries just don't have access to clean water at all. To drink, to take baths in, or to do their dishes or their laundry. And so I had this burning desire to do a well as part of our WHOW Mission. And of course we couldn't raise that kind of money; it takes like $3000 American dollars. But through my church...it just so happened that a little tiny church that I'm involved with in Rochester -- was in the habit of doing occasional large--not even grants--but just out and out cash donations. We had this money from selling our previous building. And about once a year, we would say, "Let's do this!". And I made a proposal that we support a well at this school [in South Sudan]. The school itself the school grounds included a well. But what didn't happen--what wasn't in the plan because it wasn't in the budget--was a well OUTSIDE the school boundaries and that would be for the community. Because the parents were thrilled that their children were getting fresh water at the school. But meanwhile 'back at the ranch', they didn't have water in the community. Fresh clean water. So between our [my] church and our WHOW group, we supported a well for the community, on the outside of the school building grounds!</p>
+
+<p>That, for me...I can't even describe. It was...it came to me in a dream. I'm not trying to be dramatic, but it really, truly did. And our little church had done a well once before in Africa. So I knew that they were open to the idea. And so when I proposed it, I did the "pitch". And then they had to vote. [I abstained from the vote.] And lo and behold, they gave the money to WHOW. And our WHOW group gave it to this school committee through a local church. THRILLING for me! And to see pictures of the kids at the well on the school grounds and to see pictures of the community, the small village, walking up and getting fresh water for their homes...well, I had tears in my eyes, I had a lump in my throat. I don't know if you've ever had a burning desire to do something for the world and then it happened. But, there's no greater feeling than that! I just can't even describe it.</p>
+  
+<p>And then one other highlight for me, was just in our local paper. Our WHOW group has just been going around and doing all of this stuff quietly, not tooting our horn at all. But the local newspaper found out about the group, came to listen to one of our meetings. And then he [the writer] said, "I'm going to do a story about this." And we all submitted things, our own personal best memories, or how we feel about being in the group, or whatever. [along with some pictures]. And all that was done by emails to the writer. And we waited. And the story, just through a series of circumstances, kept getting delayed and he kept apologizing. And I would tell the group [excited voice], "OK! It's going to be in this Tuesday's paper![chuckling]" And it's a small enough city that there is only one local paper and everybody [our members] was waiting for it. And then I'd have to say, "Oh, it got bumped for a story about Obama" or something. Soooo...this was so cool. He called me and said, "Finally, finally,  I can tell you: it's going to be in this Saturday's paper."</p>
+
+<p>So I grabbed the paper when it came; we still get the hard copy newspaper in our family. And I went out on the front deck and I was leafing through the paper and all of a sudden there it was! It was a full page story! With this giant picture on the page! I'm talking like 6" by 9", just unheard of to have that kind of coverage in your local paper about a little local group that isn't even a nonprofit. It was my FAVORITE picture. I had submitted it and was so hoping they'd use it, but I thought it might be like 2" by 3". But it was huge and it was so cool. It was one of our members who was sitting in literally, a hut, a hovel in Tanzania. And she was hand massaging a woman with AIDS who was really in hospice situation, she was towards the end of her life probably. Just the look on that woman's face, getting her hands massaged, and the love on our member's face. And I just thought, "That picture sums up what we're all about! It's compassion. It's truly loving someone, even though you don't know them. It's caring about the world. It's caring about each individual, not just big numbers. And it's so much more than just sending a check. Checks are GREAT! But it's that heart to heart that really gets me.</p>
+
+</p>Q: And your members do that quite often. You'll do something locally. And internationally. And your members actually go to that country, through various means, which I think is pretty astounding!</p>  
+
+<p>A: I know. And they did BEFORE. That's actually how...that's actually one of the things we decided at that very first "kitchen table" Saturday meeting was that we wanted to make sure that whatever we did, didn't sit on a dock somewhere and rot! Or, it didn't go to, as important as it can be, to put air conditioning in the Executive Director's office or something. We wanted to make sure that whatever we did went right to the PEOPLE involved.</p>
+
+<p>So from that came this, sort of, subtext of our decision-making: we already had so many of our members who have been involved for a long time in organizations. So we followed that as our guidepost. One of our members, or two or three of them, have always gone to Tanzania, to a certain village. They've gone before and they've built a church and a clinic and a hospital. And when they go, they'll take extra suitcases full of toys for the kids. Or glasses! that's a wonderful image, too. Of a couple of our members fitting glasses on people, and they could never dream of having glasses. And watching the people getting glasses, and suddenly they can see things! How exciting and how fun! But it's because the members themselves, of our group have already been uber-involved in these organizations, so there's this heartfelt connection. And no wasted money or items. We do, you know, in-kind donations...um...</p>
+
+<p>Oh, I left out one of my very favorites, when you asked about a highlight for me personally. I've always cared about migrant workers, ever since I was about 16 or 17 years old and [some of] my high school went to a migrant camp of people picking corn or soybeans. And ever since I KNEW about it, I've always had this internal desire to do something for migrant workers. And so, once we formed our [WHOW] group, I said, "I'd like to do something for migrant workers in Rochester." So I walked into a local clinic for migrant people and said some things about our group and that we have various activities we do and that we're ready, willing and able to help you out. And their jaws just dropped and literally like hit their desk! They said, "We have never had someone from the community come in and say "we have working hands, and we have time and energy to do something for your group." So I just made that my own personal little mission and because I was unemployed I was able to do some things for them once a week that they needed done. And it was so cool and it was such a fulfillment of many decades of wanting to do that.</p>
+
+<p>Q: And so What are your current projects?</p>
+
+<p>A: Right. Locally, there's a brand new organization. It's not new in the country, but it's new in Rochester, Olmsted County. And it's called Jeremiah Program and there are other locations. In the Twin Cities, I think there's two or three locations of this. What they do, their Mission, it's a nationwide organization but they only have selected about eight or nine communities where they've done this. And that's because the community has to have an infrastructure that will support this and make it sustainable. They have to have local interest, you know City, County and State.</p>
+
+<p>Q: And what do they do?</p>
+
+<p>A: And that is called Jeremiah Program. They're opening a new apartment complex in July of this year [2020] and the apartments are for single moms with one or two children and the program is working on a two-generation approach of getting people out of poverty. So these single moms...they have to make quite a commitment. They have to take classes, or get involved in some kind of technical skill training. And they go to classes, and they're provided daycare for their kids. And it isn't just kind of a "kids playing" daycare. It's Headstart and it's trained teachers with the older children. It's just a fabulous, fabulous organization. And we're SO lucky that they selected Rochester. It's going to have 44 apartments for these moms. They're all ready for this; the moms already exist and they're living in little apartments all over the community. So it's going to fulfill a huge need and it's very exciting. And the Executive Director is just so giving and so brilliant. And, on the day of the ground-breaking we got to listen to a talk by the woman who started the organization. And that was super exciting to hear the founder talk about why she did this. And we're very lucky because our City Council, our County Board and our State are all on board for this and very much backing this.</p>
+
+<p>Q: And do you have anything Internationally that you have on the horizon?</p>
+
+<p>A: We do. I wanted to just finish one thing about the Jeremiah Program that our WHOW group is doing. We're very definitely going to be involved in the child care for the kids that they need it for the moms when they need to go to a seminar or things like that. But also we've got one sort of ongoing project that we're doing for them and that is making quilts so that each apartment will have a quilt. That's been done before for the local Ronald McDonald House. And that is very cool, because then when they leave after two years, when they go off the program and go get their own apartment that's their quilt to take the quilt with them. And then we're making small quilts for the children. Our group already had members who are in a quilting society locally and they said our quilting group is making quilts for the Jeremiah Program and we said, great! Then when you have a sewing session our WHOW members can opt to go and help in any way they can in getting these quilts made. So...just these little side projects that can happen.</p>
+
+<p>Internationally, our latest one [project] is a brand new school in the same community in Tanzania where our group has already had members go and, oh...paint a new clinic that's made out of cinder block and they go and stay for 10 days or so, and paint the building and then do inside work as well, putting on good sturdy doors, things like that, and mosquito nets.  Well, that same group in Tanzania has just constructed a new school. So, once again, ohhh, we do schools man, give us that project. So we immediately jumped in and did what we did for the school in South Sudan. We gathered up school supplies and backpacks, and you know, for these kids to even have a piece of paper and a pencil is, like, so exciting. The things that our kids take for granted in America of back-to-school supplies, for these kids that is like getting a toy. And speaking of toys we've also gathered through various sources balls for the playground, bouncing balls, toys for the kids and then classroom supplies for the teachers, to have slates for the kids, and chalk, and whiteboards. So we're supporting the women -- the teachers, we're supporting the mothers of the kids that are going to go to the school. And then, a lot of us being moms and grandmas, we love that it's also impacting the children--the school-kids.</p> 
+
+<p>Q: Well, it's great to hear all of the things that you've been doing. Thanks for sharing with us.</p>
+
+		    </div>
+
+		</main>
+
+		<!-- Footer / end of page (same as home page) -->
+		<footer>
+			<!-- Footer Navigation -->
+			<div class="footer-nav">
+		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		    </div>
+
+		    <!-- Copyright Section -->
+		    <div class="copyright">
+		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
+	      	</div>
+		</footer>
+
+	</body>
 
 </html>
