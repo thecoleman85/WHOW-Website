@@ -1,91 +1,101 @@
 <!DOCTYPE HTML>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Tab Title -->
-		<title>WHOW</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/general.css"/>
-		<link rel="stylesheet" href="css/about.css"/>
-		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
-	</head>
+	<!-- Tab Title -->
+	<title>WHOW</title>
 
-	<!-- Body and whole page of the website -->
-	<body>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="css/navigation.css"/>
+	<link rel="stylesheet" href="css/about.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
-		<!-- Header of the page with logo and nav bar (same as the home page) -->
-		<header>
-			<!-- Logo -->
-			<a href="index.html">
-				<div id="logo">
-					<h1>WHOW</h1>
-					<h4>Women Helping Other Women</h4>
-				</div>
+
+<!-- Body and whole page of the website -->
+<body>
+	<!-- Header of the page with logo and nav bar (same as the home page) -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a class="activeN" href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-			<!-- Navigation Bar -->
-			<nav>
-		    	<ul>
-		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
-		        	<li onclick="currentNav(2)"><a class="activeN" href="about.html">About us</a></li>
-		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
-		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
-		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
-		    	</ul>
-		    </nav>
-		</header>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-		<!-- Main content of page -->
-		<main>
+	</header>
 
-			<!-- Section off each part to design -->
-			<div class="mission">
-				<h2>Our Mission</h2>
-				<p>WHOW is a local grassroots organization of Rochester women with the common goal of helping women in Rochester and around the world.</p>
-			</div>
+	<!-- Main content of page -->
+	<main>
+		<!-- Section off each part to design -->
+		<div class="mission">
+			<h2>Our Mission</h2>
+			<p>WHOW is a local grassroots organization of Rochester women with the common goal of helping women in Rochester and around the world.</p>
+		</div>
 
-			<div class="history">
-				<h2>History</h2>
-				<p>WHOW was formed in October 2010 as a spinoff from a longtime Rochester women’s book club.  Inspired by the book Half the Sky, by renowned Pulitzer Prize winning journalists Nicholas Kristof and Sheryl WuDunn, the host of that meeting asked if others were interested in forming a group that would make a difference for women in the world.  She also asked other women she knew and hosted a kickoff meeting.</p>
-			</div>
+		<div class="history">
+			<h2>History</h2>
+			<p>WHOW was formed in October 2010 as a spinoff from a longtime Rochester women’s book club.  Inspired by the book Half the Sky, by renowned Pulitzer Prize winning journalists Nicholas Kristof and Sheryl WuDunn, the host of that meeting asked if others were interested in forming a group that would make a difference for women in the world.  She also asked other women she knew and hosted a kickoff meeting.</p>
+		</div>
 
-			<div class="kickoff">
-				<h2>The KickOff</h2>
-				<p>On Saturday October 23, several of these women met for a kitchen table discussion of what we – collectively and individually -- wanted this group to be and do. These were busy women, many still working and/or volunteering full time.  All were women of action, women with a lifelong love of learning and women who truly cared about the world. We agreed immediately that we wanted to give in multiple ways, besides writing checks. We all knew the power of volunteering, sharing resources, skills, and in-kind giving. Two hours later, WHOW had sufficiently formed a simple plan:</p>
+		<div class="kickoff">
+			<h2>The KickOff</h2>
+			<p>On Saturday October 23, several of these women met for a kitchen table discussion of what we – collectively and individually -- wanted this group to be and do. These were busy women, many still working and/or volunteering full time.  All were women of action, women with a lifelong love of learning and women who truly cared about the world. We agreed immediately that we wanted to give in multiple ways, besides writing checks. We all knew the power of volunteering, sharing resources, skills, and in-kind giving. Two hours later, WHOW had sufficiently formed a simple plan:</p>
 
-				<ul>
-			        <li>The focus would be women.</li>
-			        <li>The name evolved quickly: Women Helping Other Women.</li>
-			        <li>WHOW would help women both locally and internationally.</li>
-			        <li>Once a month the group would meet for 1 ½ hours.</li>
-			        <li>Each meeting would focus on a local project and an international project.</li>
-			        <li>Between meetings, work on those projects would be done by individual members with occasional work sessions for sewing, assembling a variety of kits for those in need, etc...</li>
-		      	</ul>
+			<ul>
+				<li>The focus would be women.</li>
+				<li>The name evolved quickly: Women Helping Other Women.</li>
+				<li>WHOW would help women both locally and internationally.</li>
+				<li>Once a month the group would meet for 1 ½ hours.</li>
+				<li>Each meeting would focus on a local project and an international project.</li>
+				<li>Between meetings, work on those projects would be done by individual members with occasional work sessions for sewing, assembling a variety of kits for those in need, etc...</li>
+			</ul>
+		</div>
+		
+		<!-- Podcast Section -->
+		<div class="podcast">
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/785542915&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+		</div>
 
-		      	<!-- Podcast Section -->
-		      	<div class="podcast">
-		      		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/785542915&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-		      	</div>
-			</div>
+	</main>
 
-		</main>
+	<!-- Footer / end of page (same as home page) -->
+	<footer>
+		<!-- Footer Navigation -->
+		<div class="footer-nav">
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		</div>
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<p><em>Copyright &copy; 2020 WHOW</em></p>
+		</div>
+	</footer>
 
-		<!-- Footer / end of page (same as home page) -->
-		<footer>
-			<!-- Footer Navigation -->
-			<div class="footer-nav">
-		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-		    </div>
-
-		    <!-- Copyright Section -->
-		    <div class="copyright">
-		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
-	      	</div>
-		</footer>
-
-	</body>
+</body>
 
 </html>
+

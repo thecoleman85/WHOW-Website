@@ -2,10 +2,10 @@
 
 /* main Formatting / Content Area */
 .impact{
+  border-top: 10px solid #ef8f4f;
   border-bottom: 10px solid #d9dc9a;
   background-color: #181717;
   text-align: center;
-  border-top: 10px solid #ef8f4f;
   color: white;
   min-height: 300px;
   text-align: center;
@@ -61,7 +61,6 @@
 .action {
   text-align: center;
   color: #ed7d31;
-  border-bottom: 10px solid #ef8f4f;
 }
 
 .action h2{

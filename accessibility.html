@@ -2,76 +2,82 @@
 
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Tab Title -->
-    <title>WHOW About Us</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Tab Title -->
+	<title>WHOW About Us</title>
 
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="styles/general.css"/>
-    <link rel="stylesheet" href="styles/accessibility.css"/>
-    <link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
-
-  </head>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="styles/navigation.css"/>
+	<link rel="stylesheet" href="styles/accessibility.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
 
 <!-- body and whole page of the website -->
-  <body>
+<body>
+	<!-- Header of the page with Logo and Nav bar -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
 
-    <!-- Header of the page with Logo and Nav bar -->
-    <header>
-      <!-- Logo -->
-      <a href="index.html">
-        <div id="logo">
-          <h1>WHOW</h1>
-          <h4>Women Helping Other Women</h4>
-        </div>
-      </a>
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-      <!-- Navigation Bar -->
-      <nav>
-          <ul>
-              <li onclick="currentNav(1)"><a class="activeN" href="index.html">Home</a></li>
-              <li onclick="currentNav(2)"><a href="about.html">About us</a></li>
-              <li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
-              <li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
-              <li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-    <!-- Main content of the webpage -->
-    <main>
-      
-      <!-- Main body header -->
-      <div class="headM">
-        <h2>Accessibility</h2>
-      </div>
+	</header>
 
-      <div class="statement">
-        <h3>Accessibility Statement</h3>
-        <br>
-        <p>
-          WHOW is committed to making its electronic and information technologies accessible to individuals with disabilities by meeting or exceeding the requirements of Section 508 of the Rehabilitation Act (29 U.S.C. 794d), as amended in 1998. Section 508 is a federal law that requires agencies to provide individuals with disabilities equal access to electronic information and data comparable to those who do not have disabilities, unless an undue burden would be imposed on the agency. The Section 508 standards are the technical requirements and criteria that are used to measure conformance within this law. More information on Section 508 and the technical standards can be found at www.section508.gov.
+	<!-- Main content of the webpage -->
+	<main>
+		<!-- Main body header -->
+		<div class="headM">
+			<h2>Accessibility</h2>
+		</div>
 
-          If you require assistance or wish to report an issue related to the accessibility of any content on this website, please contact us. If applicable, please include the web address or URL and the specific problems you have encountered. You may also contact a member of WHOW.
-        </p>
+		<div class="statement">
+			<h3>Accessibility Statement</h3>
+			<br>
+			<p>
+				WHOW is committed to making its electronic and information technologies accessible to individuals with disabilities by meeting or exceeding the requirements of Section 508 of the Rehabilitation Act (29 U.S.C. 794d), as amended in 1998. Section 508 is a federal law that requires agencies to provide individuals with disabilities equal access to electronic information and data comparable to those who do not have disabilities, unless an undue burden would be imposed on the agency. The Section 508 standards are the technical requirements and criteria that are used to measure conformance within this law. More information on Section 508 and the technical standards can be found at www.section508.gov.
 
-    </main>
-    <!-- Footer / end of page -->
-    <footer>
-      <!-- Footer Navigation -->
-      <div class="footer-nav">
-            <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-        </div>
+				If you require assistance or wish to report an issue related to the accessibility of any content on this website, please contact us. If applicable, please include the web address or URL and the specific problems you have encountered. You may also contact a member of WHOW.
+			</p>
 
-        <!-- Copyright Section -->
-        <div class="copyright">
-          <p><em>Copyright &copy; 2020 WHOW</em></p>
-          </div>
+		</main>
 
-    </footer>
-  </body>
+		<!-- Footer / end of page -->
+		<footer>
+			<!-- Footer Navigation -->
+			<div class="footer-nav">
+				<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+			</div>
+			<!-- Copyright Section -->
+			<div class="copyright">
+				<p><em>Copyright &copy; 2020 WHOW</em></p>
+			</div>
+		</footer>
+
+	</body>
 
 </html>
