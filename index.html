@@ -8,40 +8,15 @@
 		<title>WHOW</title>
 
 		<!-- Link to CSS -->
+		<link rel="stylesheet" href="css/general.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
 
 	</head>
 <!-- body and whole page of the website -->
 	<body>
-		<!-- temp js -->
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-				showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			 	var i;
-				var slides = document.getElementsByClassName("image");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1}    
-			  	if (n < 1) {slideIndex = slides.length}
-			  	for (i = 0; i < slides.length; i++) {
-			      	slides[i].style.display = "none";  
-			  	}
-			  	for (i = 0; i < dots.length; i++) {
-			    	dots[i].className = dots[i].className.replace(" active", "");
-			  	}
-			  	slides[slideIndex-1].style.display = "block";  
-			  	dots[slideIndex-1].className += " active";
-			}
-		</script>
+		<!-- Dot indicator js -->
+		<script src="js/imageIndicator.js"></script>
+		
 
 		<!-- Header of the page with Logo and Nav bar -->
 		<header>
@@ -56,11 +31,11 @@
 			<!-- Navigation Bar -->
 			<nav>
 		    	<ul>
-		        	<li class="underline" onClick="ul(0)"><a href="index.html">Home</a></li>
-		        	<li class="underline" onClick="ul(1)"><a href="about.html">About us</a></li>
-		        	<li class="underline" onClick="ul(2)"><a href="impact.html">See The Impact</a></li>
-		        	<li class="underline" onClick="ul(3)"><a href="faq.html">FAQ</a></li>
-		        	<li class="underline" onClick="ul(4)"><a href="contact.html">Contact</a></li>
+		        	<li onclick="currentNav(1)"><a class="activeN" href="index.html">Home</a></li>
+		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
+		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
+		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
 		    	</ul>
 		    </nav>
 		</header>
@@ -72,31 +47,31 @@
 
 				<!-- Space between image and fade is for 2 seperate classes -->
 				<div class="image fade" style="display: block;">
-					<img src="images/handMassage.jpg" alt "" height=500, width=700>
-					<div class="sideText">We Believe there are many ways to give...
+					<img src="images/handMassage.jpg" alt "WHOW member giving a hand massage to an AIDS patient in Tanzania" height=500, width=700>
+					<div class="sideText">We believe there are many ways to give...
 					</div>
 				</div>
 
 				<div class="image fade" style="display: none;">
-					<img src="images/image1.jpg" alt "" height=500, width=700>
-					<div class="sideText">Caring, educating others, personal donatinos, fundraising, and giving time, talents, and treasures.
+					<img src="images/image1.jpg" alt "Two WHOW members and a Tanzania Women" height=500, width=700>
+					<div class="sideText">Caring, educating others, personal donations, fundraising, and giving time, talents, and treasures.
 					</div>
 				</div>
 
 				<div class="image fade" style="display: none;">
-					<img src="images/diapers.jpg" alt "" height=500, width=700>
+					<img src="images/diapers.jpg" alt "WHOW members making diapers to be distributed throughout the world." height=500, width=700>
 					<div class="sideText">WHOW started around a dining room table. We brainstormed about what each of us felt passionately about in terms of issues in the world affecting women.
 					</div>
 				</div>
 
 				<div class="image fade" style="display: none;">
-					<img src="images/cleaningKits2.jpg" alt "" height=500, width=700>
+					<img src="images/cleaningKits2.jpg" alt "WHOW members assembling cleaning kits for women leaving Women's Shelter out of Women's Shelter into  their own apartment." height=500, width=700>
 					<div class="sideText">By the end of the first meeting, we agreed that we wanted to educate ourselves and others.  But we wanted to be a group about ACTION.
 					</div>
 				</div>
 
 				<div class="image fade" style="display: none;">
-					<img src="images/tanzania1.jpg" alt "" height=500, width=700>
+					<img src="images/tanzania1.jpg" alt "WHOW member participating in a mosquito net project in Tanzania." height=500, width=700>
 					<div class="sideText">So, each month we do ACTION ITEMS for local and international nonprofits that help women.
 					</div>
 				</div>

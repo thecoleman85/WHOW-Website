@@ -8,6 +8,7 @@
 		<title>WHOW</title>
 
 		<!-- Link to CSS -->
+		<link rel="stylesheet" href="css/general.css"/>
 		<link rel="stylesheet" href="css/faq.css"/>
 	</head>
 
@@ -15,7 +16,7 @@
 	<body>
 
 		<!-- JavaScript for FAQ accordion-->
-		<script src="js/faq.js"></script> 
+		<!-- <script src="js/faq.js"></script>  -->
 
 		<!-- Header of the page with logo and nav bar (same as the home page) -->
 		<header>
@@ -30,11 +31,11 @@
 			<!-- Navigation Bar -->
 			<nav>
 		    	<ul>
-		        	<li class="activeMainN"><a href="index.html">Home</a></li>
-		        	<li class="activeMainN"><a href="about.html">About us</a></li>
-		        	<li class="activeMainN"><a href="impact.html">See The Impact</a></li>
-		        	<li class="activeMainN"><a href="faq.html">FAQ</a></li>
-		        	<li class="activeMainN"><a href="contact.html">Contact</a></li>
+		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
+		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
+		        	<li onclick="currentNav(4)"><a class="activeN" href="faq.html">FAQ</a></li>
+		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
 		    	</ul>
 		    </nav>
 		</header>
@@ -51,10 +52,12 @@
 
 				<button class="accordion">What is WHOW?</button>
 				<div class="panel">
-					<p>Founded in October 2010, WHOW is a local grassroots organization of Rochester women wtih the common goal of helping women in Rochester and around the world.</p>
+					<p>
+					Founded in October 2010, WHOW is a local grassroots organization of Rochester women wtih the common goal of helping women in Rochester and around the world.
+					</p>
 				</div>
 
-				<button class="accordion">How do I join WHOW</button>
+				<button class="accordion">How do I join WHOW?</button>
 				<div class="panel">
 					<p>Visit our contact us page HERE and fill out the form.</p>
 				</div>
@@ -77,6 +80,8 @@
 			</div>
 
 		</main>
+		<!-- JavaScript for FAQ accordion-->
+		<script src="js/accordion.js"></script>
 
 		<!-- Footer / end of page (same as home page) -->
 		<footer>

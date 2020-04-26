@@ -1,121 +1,59 @@
-/*
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-*/
-
-/*
-reset all elements
-*/ 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Embedded fonts / Dependant on Browser */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: italic;
-  font-weight: normal;
-  src: url(../fonts/Josefin_Sans/JosefinSans-LightItalic.ttf);
-}
-@font-face {
-  font-family: 'Josefin Sans';
-  font-weight: normal;
-  src: url(../fonts/Josefin_Sans/JosefinSans-Light.ttf);
-}
-@font-face {
-  font-family: 'Merriweather';
-  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
-}
-
-/* General formatting all links */
-a {
-  font-family: 'Josefin_Sans';
-  color: #888888;
-  padding: 10px 30px;
-  text-decoration: none;
-}
-a:hover {
-  color: #000000;
-}
-
-/* Header Formatting */
-header{
-	background-color: white;
-	font-family: "Josefin_Sans";
-	font-style: italic;
-	letter-spacing: 2px;
-	text-align: center;
-	
-	/* spacing between header and main */
-	padding-bottom: 10px;
-	padding-bottom: 40px;
-
-	/* spacing between edge of browser */
-  margin-top: 20px;
-	margin-left: 50px; 
-	margin-right:50px;
-}
-
-#logo {
-	padding-left: 20px;
-	float: left;
-}
-
-/* Navigation Formatting */
-nav{
-  text-align: right;
-}
-
-nav ul li{
-	display: inline-block;
-}
-
-
 /* Bodying Formatting / whole page */
 legend{
   border-top: 10px solid #ef8f4f;
+  border-bottom: 10px solid #d9dc9a;
   background-color: #181717;
   color: #bfe7f3;
   padding: 40px 200px 40px 200px;
   text-align: center;
   font-size: 35px;
 }
+
 /* main Formatting / Content Area */
 .content{
-  border-top: 10px solid #d9dc9a;
-  padding: 40px 200px 40px 200px;
-  border-bottom: 10px solid #ef8f4f;
-
+  max-width: 400px;
+  align-content: center;
+  margin: auto;
+  padding: 40px 40px;
 }
 
 /* Form Formatting */
 form{
   border: 5px solid white;
-  text-align: center;
 }
-
-
-
-/* Footer Formatting / bottom of every page */
-footer {
-  margin-top: 50px;
-  margin: auto;
-  padding: 10px 0px;
-  text-align: center;
-  font-family: 'Montserrat';
-  color: #888888;
+.form-textBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
-
-.copyright {
-  font-size: 12px;
+.form-textBox input{
+  min-width: 65%;
 }
-
-.footer-nav {
-  padding: 10px;
-  font-family: 'Josefin Sans';
-  text-align: center;
+.form-dropDown{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.form-dropDown select{
+  min-width: 65%;
+}
+.form-radioButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 100px 0px;
+}
+.form-textArea{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.form-textArea label{
+  padding-bottom: 5px;
 }
