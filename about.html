@@ -8,7 +8,7 @@
 		<title>WHOW</title>
 
 		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/general.css"/>
+		<link rel="stylesheet" href="css/navigation.css"/>
 		<link rel="stylesheet" href="css/about.css"/>
 		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
 	</head>
@@ -27,8 +27,13 @@
 			</a>
 
 			<!-- Navigation Bar -->
-			<nav>
-		    	<ul>
+			<nav class="navbar">
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+		    	<ul class="nav-links">
 		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
 		        	<li onclick="currentNav(2)"><a class="activeN" href="about.html">About us</a></li>
 		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
@@ -36,6 +41,10 @@
 		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
 		    	</ul>
 		    </nav>
+
+		    <!-- Javascript for mobile "hamburger" toggle -->
+		    <script src="js/toggle.js"></script>
+
 		</header>
 
 		<!-- Main content of page -->
