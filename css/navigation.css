@@ -73,7 +73,11 @@ header a {
   padding: 0px 10px;
 }
 .nav-links li a:hover {
+  border-bottom: 3px solid #888888;
   color: #000000;
+}
+nav a.activeN{
+  border-bottom: 3px solid #888888;
 }
 
 /* Toggle button */
@@ -132,11 +136,11 @@ footer {
   padding: 10px 0px 20px 0px;
   text-align: center;
   font-family: 'Montserrat';
+  color: #888888;
 }
 
 .footer-nav {
   font-family: 'Josefin Sans';
-  color: #888888;
   text-align: center;
   text-decoration: none;
   padding: 10px;
