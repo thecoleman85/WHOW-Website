@@ -10,7 +10,7 @@
 		<!-- Link to CSS -->
 		<link rel="stylesheet" href="css/general.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
-
+		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
 	</head>
 <!-- body and whole page of the website -->
 	<body>
@@ -29,13 +29,16 @@
 			</a>
 
 			<!-- Navigation Bar -->
-			<nav>
+			<nav id="navH">
 		    	<ul>
 		        	<li onclick="currentNav(1)"><a class="activeN" href="index.html">Home</a></li>
 		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
 		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
 		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
 		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+		        	<a href="javascript:void(0);" class="icon" onclick="menuBar()">
+		        		<i class="fa fa-bars"></i>
+		        	</a>
 		    	</ul>
 		    </nav>
 		</header>
@@ -88,6 +91,7 @@
 				<span class="dot" onclick="currentSlide(5)"></span> 
 			</div>
 		</main>
+
 		<!-- Footer / end of page -->
 		<footer>
 			<!-- Footer Navigation -->

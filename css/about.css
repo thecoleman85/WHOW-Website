@@ -1,7 +1,6 @@
 /* Bodying Formatting / whole page */
 .mission {
   background-color: #181717;
-  /*background-image: none;*/
   border-top: 10px solid #ef8f4f;
   color: white;
   height: 400px;
@@ -10,6 +9,12 @@
   flex-direction: column;
 }
 
+/* --Format the background image-- */
+.bg {
+  max-height: 400px;
+  position: relative;
+}
+/* ------------------------------- */
 
 .mission h2{
   margin: auto auto 0px;
@@ -75,6 +80,9 @@
 
 /* Podcast Formatting */
 .podcast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: 40px auto 40px;
   padding: 0px 40px;
