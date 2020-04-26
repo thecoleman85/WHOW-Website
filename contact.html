@@ -1,196 +1,207 @@
 <!DOCTYPE HTML>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Tab Title -->
-		<title>WHOW</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/general.css"/>
-		<link rel="stylesheet" href="css/contact.css"/>
-		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
-	</head>
+	<!-- Tab Title -->
+	<title>WHOW</title>
 
-	<!-- Body and whole page of the website -->
-	<body>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="css/general.css"/>
+	<link rel="stylesheet" href="css/contact.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
-		<!-- Header of the page with logo and nav bar (same as the home page) -->
-		<header>
-			<!-- Logo -->
-			<a href="index.html">
-				<div id="logo">
-					<h1>WHOW</h1>
-					<h4>Women Helping Other Women</h4>
-				</div>
+
+<!-- Body and whole page of the website -->
+<body>
+	<!-- Header of the page with logo and nav bar (same as the home page) -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a class="activeN" href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-			<!-- Navigation Bar -->
-			<nav>
-		    	<ul>
-		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
-		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
-		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
-		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
-		        	<li onclick="currentNav(5)"><a class="activeN" href="contact.html">Contact</a></li>
-		    	</ul>
-		    </nav>
-		</header>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-		<!-- Main content of page -->
-		<main>
+	</header>
 
-			<!-- Title of the Form -->
-			<legend>Contact Us</legend>
+	<!-- Main content of page -->
+	<main>
+		<!-- Title of the Form -->
+		<legend>Contact Us</legend>
 
-			<!-- This div to orient the form -->
-			<div class="content">
-				<!-- Form Beginning -->
+		<!-- This div to orient the form -->
+		<div class="content">
+			<!-- Form Beginning -->
+			<form>
+				<!-- First Name Input -->
+				<div class="form-textBox">
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" value="">
+				</div>
 
-				<form>
-					<!-- First Name Input -->
-					<div class="form-textBox">
-						<label for="fname">First Name:</label>
-						<input type="text" id="fname" name="fname" value="">
-					</div>
+				<!-- Last Name Input -->
+				<div class="form-textBox">
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lname" value="">
+				</div>
 
-					<!-- Last Name Input -->
-					<div class="form-textBox">
-						<label for="lname">Last Name:</label>
-						<input type="text" id="lname" name="lname" value="">
-					</div>
+				<!-- Email Input -->
+				<div class="form-textBox">
+					<label for="email">E-mail:</label>
+					<input type="text" id="email" name="email" value="">
+				</div>
 
-					<!-- Email Input -->
-					<div class="form-textBox">
-						<label for="email">E-mail:</label>
-						<input type="text" id="email" name="email" value="">
-					</div>
+				<!-- Phone Number Input -->
+				<div class="form-textBox">
+					<label for="pnum">Phone Number:</label>
+					<input type="number" id="pnum" name="pnum" value="">
+				</div>
 
-					<!-- Phone Number Input -->
-					<div class="form-textBox">
-						<label for="pnum">Phone Number:</label>
-						<input type="number" id="pnum" name="pnum" value="">
-					</div>
+				<!-- Address Input -->
+				<div class="form-textBox">
+					<label for="address">Address:</label>
+					<input type="text" id="address" name="address" value="">
+				</div>
 
-					<!-- Address Input -->
-					<div class="form-textBox">
-						<label for="address">Address:</label>
-						<input type="text" id="address" name="address" value="">
-					</div>
+				<!-- City Input -->
+				<div class="form-textBox">
+					<label for="cname">City:</label>
+					<input type="text" id="cname" name="cname" value="">
+				</div>
 
-					<!-- City Input -->
-					<div class="form-textBox">
-						<label for="cname">City:</label>
-						<input type="text" id="cname" name="cname" value="">
-					</div>
+				<!-- State Input Options -->
+				<div class="form-dropDown">
+					<label for="state">State:</label>
+					<select name="state">
+						<option value=" " >Please select your state</option>
+						<option>Alabama</option>
+						<option>Alaska</option>
+						<option>Arizona</option>
+						<option>Arkansas</option>
+						<option>California</option>
+						<option>Colorado</option>
+						<option>Connecticut</option>
+						<option>Delaware</option>
+						<option>District of Columbia</option>
+						<option>Florida</option>
+						<option>Georgia</option>
+						<option>Hawaii</option>
+						<option>Idaho</option>
+						<option>Illinois</option>
+						<option>Indiana</option>
+						<option>Iowa</option>
+						<option>Kansas</option>
+						<option>Kentucky</option>
+						<option>Louisiana</option>
+						<option>Maine</option>
+						<option>Maryland</option>
+						<option>Massachusetts</option>
+						<option>Michigan</option>
+						<option>Minnesota</option>
+						<option>Mississippi</option>
+						<option>Missouri</option>
+						<option>Montana</option>
+						<option>Nebraska</option>
+						<option>Nevada</option>
+						<option>New Hampshire</option>
+						<option>New Jersey</option>
+						<option>New Mexico</option>
+						<option>New York</option>
+						<option>North Carolina</option>
+						<option>North Dakota</option>
+						<option>Ohio</option>
+						<option>Oklahoma</option>
+						<option>Oregon</option>
+						<option>Pennsylvania</option>
+						<option>Rhode Island</option>
+						<option>South Carolina</option>
+						<option>South Dakota</option>
+						<option>Tennessee</option>
+						<option>Texas</option>
+						<option>Utah</option>
+						<option>Vermont</option>
+						<option>Virginia</option>
+						<option>Washington</option>
+						<option>West Virginia</option>
+						<option>Wisconsin</option>
+						<option>Wyoming</option>
+					</select>
+				</div>
 
-					<!-- State Input Options -->
-					<div class="form-dropDown">
-						<label for="state">State:</label>
-						<select name="state">
-				    		<option value=" " >Please select your state</option>
-				      		<option>Alabama</option>
-				      		<option>Alaska</option>
-				      		<option>Arizona</option>
-				     		<option>Arkansas</option>
-				     		<option>California</option>
-				      		<option>Colorado</option>
-				      		<option>Connecticut</option>
-				      		<option>Delaware</option>
-				      		<option>District of Columbia</option>
-				      		<option>Florida</option>
-				      		<option>Georgia</option>
-				      		<option>Hawaii</option>
-				      		<option>Idaho</option>
-				      		<option>Illinois</option>
-				      		<option>Indiana</option>
-				      		<option>Iowa</option>
-				      		<option>Kansas</option>
-				      		<option>Kentucky</option>
-				      		<option>Louisiana</option>
-				      		<option>Maine</option>
-				      		<option>Maryland</option>
-				      		<option>Massachusetts</option>
-				      		<option>Michigan</option>
-				      		<option>Minnesota</option>
-				      		<option>Mississippi</option>
-				      		<option>Missouri</option>
-				      		<option>Montana</option>
-				      		<option>Nebraska</option>
-				      		<option>Nevada</option>
-				      		<option>New Hampshire</option>
-				      		<option>New Jersey</option>
-				      		<option>New Mexico</option>
-				      		<option>New York</option>
-				      		<option>North Carolina</option>
-				      		<option>North Dakota</option>
-				      		<option>Ohio</option>
-				      		<option>Oklahoma</option>
-				      		<option>Oregon</option>
-				      		<option>Pennsylvania</option>
-				      		<option>Rhode Island</option>
-				      		<option>South Carolina</option>
-				      		<option>South Dakota</option>
-				      		<option>Tennessee</option>
-				      		<option>Texas</option>
-				      		<option>Utah</option>
-				      		<option>Vermont</option>
-				      		<option>Virginia</option>
-				      		<option>Washington</option>
-				      		<option>West Virginia</option>
-				      		<option>Wisconsin</option>
-				      		<option>Wyoming</option>
-				    	</select>
-					</div>
+				<!-- ZIP Code Input -->
+				<div class="form-textBox">
+					<label for="zcode">Zip Code:</label>
+					<input type="number" id="zcode" name="zcode" value="">
+				</div>
 
-					<!-- Zipcode Input -->
-					<div class="form-textBox">
-						<label for="zcode">Zip Code:</label>
-						<input type="number" id="zcode" name="zcode" value="">
-					</div>
-
-					<!-- Receive WHOW Minutes -->
-					<div class="form-radioButton">
-						<label alt="receiveMail">Would you like to receive WHOW Minutes?</label>
-						<div class="list">
-							<div class="radioButtons">
-								<input type="radio" id="yes" name="mail" value="yes">
-								<label for="yes">Yes</label>
-							</div>
-							<div class="radioButtons">
-								<input type="radio" id="no" name="mail" value="no">
-								<label for="no">No</label>
-							</div>
+				<!-- Receive WHOW Minutes -->
+				<div class="form-radioButton">
+					<label alt="receiveMail">Would you like to receive WHOW Minutes?</label>
+					<div class="list">
+						<div class="radioButtons">
+							<input type="radio" id="yes" name="mail" value="yes">
+							<label for="yes">Yes</label>
+						</div>
+						<div class="radioButtons">
+							<input type="radio" id="no" name="mail" value="no">
+							<label for="no">No</label>
 						</div>
 					</div>
+				</div>
 
-					<!-- Tell us about You Input -->
-					<div class="form-textArea">
-						<label for="about">Tell us about you:</label>
-						<textarea name="message" rows="10" cols="30"></textarea>
-					</div>
+				<!-- Tell us about You Input -->
+				<div class="form-textArea">
+					<label for="about">Tell us about you:</label>
+					<textarea name="message" rows="10" cols="30"></textarea>
+				</div>
 
-					<input type="submit">
+				<!-- Submit Button -->
+				<input type="submit">
 
-				</form>
-			</div>
+			</form>
+		
+		</div>
 
-		</main>
+	</main>
 
-		<!-- Footer / end of page (same as home page) -->
-		<footer>
-			<!-- Footer Navigation -->
-			<div class="footer-nav">
-		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-		    </div>
+	<!-- Footer / end of page (same as home page) -->
+	<footer>
+		<!-- Footer Navigation -->
+		<div class="footer-nav">
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		</div>
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<p><em>Copyright &copy; 2020 WHOW</em></p>
+		</div>
+	</footer>
 
-		    <!-- Copyright Section -->
-		    <div class="copyright">
-		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
-	      	</div>
-		</footer>
-
-	</body>
+</body>
 
 </html>
+

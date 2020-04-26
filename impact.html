@@ -1,108 +1,117 @@
 <!DOCTYPE HTML>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Tab Title -->
-		<title>WHOW</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/general.css"/>
-		<link rel="stylesheet" href="css/impact.css"/>
-		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
-	</head>
+	<!-- Tab Title -->
+	<title>WHOW</title>
 
-	<!-- Body and whole page of the website -->
-	<body>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="css/general.css"/>
+	<link rel="stylesheet" href="css/impact.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
-		<!-- Header of the page with logo and nav bar (same as the home page) -->
-		<header>
-			<!-- Logo -->
-			<a href="index.html">
-				<div id="logo">
-					<h1>WHOW</h1>
-					<h4>Women Helping Other Women</h4>
-				</div>
+
+<!-- Body and whole page of the website -->
+<body>
+	<!-- Header of the page with logo and nav bar (same as the home page) -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a class="activeN" href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-			<!-- Navigation Bar -->
-			<nav>
-		    	<ul>
-		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
-		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
-		        	<li onclick="currentNav(3)"><a class="activeN" href="impact.html">See The Impact</a></li>
-		        	<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
-		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
-		    	</ul>
-		    </nav>
-		</header>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-		<!-- Main content of page -->
-		<main>
-			<!-- Section off each part to design -->
-			<div class="impact">
-				<h2>See the Impact</h2>
-				<p>Here are some of the organizations we've helped over the years, both in Rochester and around the world.</p>
+	</header>
+
+	<!-- Main content of page -->
+	<main>
+		<!-- Section off each part to design -->
+		<div class="impact">
+			<h2>See the Impact</h2>
+			<p>Here are some of the organizations we've helped over the years, both in Rochester and around the world.</p>
+		</div>
+
+		<!-- Put the Local and International into a Div to put them side by side -->
+		<div class="impactContainer">
+			<!-- Align Local Div to the left side -->
+			<div class="local">
+				<h2>Local</h2>
+				<!-- Bullet point list -->
+				<ul>
+					<li>Rochester Health Commons</li>
+					<li>Rochester Women's Shelter</li>
+					<li>Refugee Resettlement Program (through Catholic Charities)</li>
+					<li>Migrant Health Services</li>
+					<li>Medical Mission Warehouse</li>
+					<li>Community Food Response</li>
+					<li>Jeremiah Program</li>
+					<li>Rochester Cares Warming Center</li>
+					<li>Channel One</li>
+				</ul>
 			</div>
 
-			<!-- Put the Local and International into a Div to put them side by side -->
-			<div class="impactContainer">
-				<!-- Align Local Div to the left side -->
-				<div class="local">
-					<h2>Local</h2>
+			<!-- Align International Div to the right side -->
+			<div class="intern">
 
-					<!-- Bullet point list -->
-					<ul>
-				        <li>Rochester Health Commons</li>
-				        <li>Rochester Women's Shelter</li>
-				        <li>Refugee Resettlement Program (through Catholic Charities)</li>
-				        <li>Migrant Health Services</li>
-				        <li>Medical Mission Warehouse</li>
-				        <li>Community Food Response</li>
-				        <li>Jeremiah Program</li>
-				        <li>Rochester Cares Warming Center</li>
-				        <li>Channel One</li>
-	     			</ul>
-				</div>
-
-				<!-- Align International Div to the right side -->
-				<div class="intern">
-					<h2>International</h2>
-					<!-- Bullet Point List -->
-					<ul>
-				        <li>Hands For Humanity (Ecuador)</li>
-				        <li>Harvesters Reaching The Nations (South Sudan)</li>
-				        <li>Heifer International (Cambodia)</li>
-				        <li>Seeds of Wisdom School (South Sudan, Uganda)</li>
-				        <li>Global Health Ministries (Worldwide)</li>
-				        <li>Zinga Tanzania</li>
-				    </ul>
-
-				</div>
-			</div> <!-- End Container -->
-
-			<div class="action">
-				<h2>See Us in Action</h2>
-				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209458740738039%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209044845950928%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-     
+				<h2>International</h2>
+				<!-- Bullet Point List -->
+				<ul>
+					<li>Hands For Humanity (Ecuador)</li>
+					<li>Harvesters Reaching The Nations (South Sudan)</li>
+					<li>Heifer International (Cambodia)</li>
+					<li>Seeds of Wisdom School (South Sudan, Uganda)</li>
+					<li>Global Health Ministries (Worldwide)</li>
+					<li>Zinga Tanzania</li>
+				</ul>
 			</div>
-		</main>
+		</div> <!-- End Container -->
 
-		<!-- Footer / end of page (same as home page) -->
-		<footer>
-			<!-- Footer Navigation -->
-			<div class="footer-nav">
-		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-		    </div>
+		<div class="action">
+			<h2>See Us in Action</h2>
+			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209458740738039%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Frootjessen%2Fvideos%2F10209044845950928%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+		</div>
+	</main>
 
-		    <!-- Copyright Section -->
-		    <div class="copyright">
-		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
-	      	</div>
-		</footer>
+	<!-- Footer / end of page (same as home page) -->
+	<footer>
+		<!-- Footer Navigation -->
+		<div class="footer-nav">
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		</div>
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<p><em>Copyright &copy; 2020 WHOW</em></p>
+		</div>
+	</footer>
 
-	</body>
+</body>
 
 </html>
+

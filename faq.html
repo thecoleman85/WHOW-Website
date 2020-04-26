@@ -1,102 +1,109 @@
 <!DOCTYPE HTML>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Tab Title -->
-		<title>WHOW</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0" />
 
-		<!-- Link to CSS -->
-		<link rel="stylesheet" href="css/general.css"/>
-		<link rel="stylesheet" href="css/faq.css"/>
-		<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
-	</head>
+	<!-- Tab Title -->
+	<title>WHOW</title>
 
-	<!-- Body and whole page of the website -->
-	<body>
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="css/general.css"/>
+	<link rel="stylesheet" href="css/faq.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
-		<!-- JavaScript for FAQ accordion-->
-		<!-- <script src="js/faq.js"></script>  -->
 
-		<!-- Header of the page with logo and nav bar (same as the home page) -->
-		<header>
-			<!-- Logo -->
-			<a href="index.html">
-				<div id="logo">
-					<h1>WHOW</h1>
-					<h4>Women Helping Other Women</h4>
-				</div>
+<!-- Body and whole page of the website -->
+<body>
+	<!-- JavaScript for FAQ accordion-->
+	<!-- <script src="js/faq.js"></script>  -->
+
+	<!-- Header of the page with logo and nav bar (same as the home page) -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
 			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a class="activeN" href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-			<!-- Navigation Bar -->
-			<nav>
-		    	<ul>
-		        	<li onclick="currentNav(1)"><a href="index.html">Home</a></li>
-		        	<li onclick="currentNav(2)"><a href="about.html">About us</a></li>
-		        	<li onclick="currentNav(3)"><a href="impact.html">See The Impact</a></li>
-		        	<li onclick="currentNav(4)"><a class="activeN" href="faq.html">FAQ</a></li>
-		        	<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
-		    	</ul>
-		    </nav>
-		</header>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-		<!-- Main content of page -->
-		<main>
-			
-			<!-- Head of main body -->
-			<div class="headM">
-				<h2>Frequently Asked Questions</h2>
-			</div>
-			
-			<div class="container">
+	</header>
 
-				<button class="accordion">What is WHOW?</button>
-				<div class="panel">
-					<p>
-					Founded in October 2010, WHOW is a local grassroots organization of Rochester women wtih the common goal of helping women in Rochester and around the world.
-					</p>
-				</div>
+	<!-- Main content of page -->
+	<main>
+		<!-- Head of main body -->
+		<div class="headM">
+			<h2>Frequently Asked Questions</h2>
+		</div>
 
-				<button class="accordion">How do I join WHOW?</button>
-				<div class="panel">
-					<p>Visit our contact us page HERE and fill out the form.</p>
-				</div>
-
-				<button class="accordion">I'm not in your State. How can I be Involved?</button>
-				<div class="panel">
-					<p>WHOW is not a non-profit.  We simply support existing nonprofits.  Go to the See The Impact page and donate to any of the organizations listed.</p>
-				</div>
-
-				<button class="accordion">How do I donate to WHOW?</button>
-				<div class="panel">
-					<p>We are not a nonprofit and do not accept donations.  We suggest donating directly to the organizations mentioned on this website.</p>
-				</div>
-
-				<button class="accordion">I'm not a woman. How can I be involved?</button>
-				<div class="panel">
-					<p>Check out any of our causes.  Make donations in whatever way best suits you.</p>
-				</div>
-
+		<div class="container">
+			<button class="accordion">What is WHOW?</button>
+			<div class="panel">
+				<p>Founded in October 2010, WHOW is a local grassroots organization of Rochester women wtih the common goal of helping women in Rochester and around the world.
+				</p>
 			</div>
 
-		</main>
-		<!-- JavaScript for FAQ accordion-->
-		<script src="js/accordion.js"></script>
+			<button class="accordion">How do I join WHOW?</button>\<div class="panel">
+				<p>Visit our contact us page HERE and fill out the form.</p>
+			</div>
 
-		<!-- Footer / end of page (same as home page) -->
-		<footer>
-			<!-- Footer Navigation -->
-			<div class="footer-nav">
-		        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-		    </div>
+			<button class="accordion">I'm not in your State. How can I be Involved?</button>
+			<div class="panel">
+				<p>WHOW is not a non-profit.  We simply support existing nonprofits.  Go to the See The Impact page and donate to any of the organizations listed.</p>
+			</div>
 
-		    <!-- Copyright Section -->
-		    <div class="copyright">
-		    	<p><em>Copyright &copy; 2020 WHOW</em></p>
-	      	</div>
-		</footer>
+			<button class="accordion">How do I donate to WHOW?</button>
+			<div class="panel">
+				<p>We are not a nonprofit and do not accept donations.  We suggest donating directly to the organizations mentioned on this website.</p>
+			</div>
 
-	</body>
+			<button class="accordion">I'm not a woman. How can I be involved?</button>
+			<div class="panel">
+				<p>Check out any of our causes.  Make donations in whatever way best suits you.</p>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- JavaScript for FAQ accordion-->
+	<script src="js/accordion.js"></script>
+
+	<!-- Footer / end of page (same as home page) -->
+	<footer>
+		<!-- Footer Navigation -->
+		<div class="footer-nav">
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		</div>
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<p><em>Copyright &copy; 2020 WHOW</em></p>
+		</div>
+	</footer>
+
+</body>
 
 </html>
+

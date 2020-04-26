@@ -64,13 +64,13 @@ header a {
   list-style: none;
 }
 .nav-links li {
-  padding: 0px 5px;
+  padding: 5px 5px;
 }
 .nav-links li:last-child{
   padding-right: 0px;
 }
 .nav-links li a {
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 .nav-links li a:hover {
   border-bottom: 3px solid #888888;
