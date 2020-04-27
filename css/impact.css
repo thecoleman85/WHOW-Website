@@ -35,23 +35,12 @@
   justify-content: space-between;
 }
 
-.local {
-  padding: 20px 20px;
-  width: 40%;
+.list-box {
+  margin: 0px 10px;
+  padding: 20px 0px 20px 20px;
+  flex-basis: 45%;
 }
-
-.local h2{
-  color: #ed7d31;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.intern {
-  padding: 20px 20px;
-  width: 40%;
-}
-
-.intern h2{
+.list-box h2{
   color: #ed7d31;
   text-align: center;
   padding-bottom: 10px;
@@ -62,7 +51,6 @@
   text-align: center;
   color: #ed7d31;
 }
-
 .action h2{
   padding-bottom: 20px;
 }
