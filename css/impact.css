@@ -5,10 +5,9 @@
   border-top: 10px solid #ef8f4f;
   border-bottom: 10px solid #d9dc9a;
   background-color: #181717;
-  text-align: center;
   color: white;
-  min-height: 300px;
   text-align: center;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
 }
