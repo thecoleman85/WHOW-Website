@@ -2,69 +2,69 @@
 
 /* main Formatting / Content Area */
 .impact{
-  border-top: 10px solid #ef8f4f;
-  border-bottom: 10px solid #d9dc9a;
-  background-color: #181717;
-  color: white;
-  text-align: center;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
+	border-top: 10px solid #ef8f4f;
+	border-bottom: 10px solid #d9dc9a;
+	background-color: #181717;
+	color: white;
+	text-align: center;
+	min-height: 240px;
+	display: flex;
+	flex-direction: column;
 }
 
 .impact h2{
-  margin: auto auto 0px;
-  color: #bfe7f3;
-  max-width: 500px;
-  padding: 5px 80px;
+	margin: auto auto 0px;
+	color: #bfe7f3;
+	max-width: 500px;
+	padding: 5px 80px;
 }
 
 .impact p{
-  margin: 0px auto auto;
-  max-width: 500px;
-  padding: 5px 80px;
+	margin: 0px auto auto;
+	max-width: 500px;
+	padding: 5px 80px;
 }
 
 /* Format Container so Local and international can be side by side */
 .impactContainer{
-  display: flex;
-  max-width: 800px;
-  margin: 40px auto 20px;
-  padding: 0px 60px;
-  justify-content: space-between;
+	display: flex;
+	max-width: 800px;
+	margin: 40px auto 20px;
+	padding: 0px 60px;
+	justify-content: space-between;
 }
 
 .list-box {
-  margin: 0px 10px;
-  padding: 20px 0px 20px 20px;
-  flex-basis: 45%;
+	margin: 0px 10px;
+	padding: 20px 0px 20px 20px;
+	flex-basis: 45%;
 }
 .list-box h2 {
-  color: #ed7d31;
-  text-align: center;
-  padding: 0px 10px 10px 0px;
+	color: #ed7d31;
+	text-align: center;
+	padding: 0px 10px 10px 0px;
 }
 
 /* Action Area */
 .action {
-  text-align: center;
-  color: #ed7d31;
+	text-align: center;
+	color: #ed7d31;
 }
 
 .action h2{
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 iframe{
-  padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 /* MOBILE LAYOUT */
 @media (max-width: 900px) {
-  .impactContainer {
-    flex-direction: column;
-    max-width: 400px;
-  }
+	.impactContainer {
+		flex-direction: column;
+		max-width: 400px;
+	}
 
 }
 
