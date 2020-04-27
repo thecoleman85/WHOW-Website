@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -41,6 +41,7 @@
 				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
 				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
 				<li onclick="currentNav(5)"><a class="activeN" href="contact.html">Contact</a></li>
+				<li onclick="currentNav(6)"><a href="accessibility.html">Accessibility</a></li>
 			</ul>
 		</nav>
 
@@ -52,139 +53,23 @@
 	<!-- Main content of page -->
 	<main>
 		<!-- Title of the Form -->
-		<legend>Contact Us</legend>
+		<div class="headM">
+			<h2>Contact</h2>
+		</div>
 
 		<!-- This div to orient the form -->
-		<div class="content">
-			<!-- Form Beginning -->
-			<form>
-				<!-- First Name Input -->
-				<div class="form-textBox">
-					<label for="fname">First Name:</label>
-					<input type="text" id="fname" name="fname" value="">
-				</div>
+		<div class="container">
 
-				<!-- Last Name Input -->
-				<div class="form-textBox">
-					<label for="lname">Last Name:</label>
-					<input type="text" id="lname" name="lname" value="">
-				</div>
+			<!-- Email Link -->
+			<a class="formatL" href="#">
+				<button class="links">Contact Us Directly Here</button>
+			</a>
 
-				<!-- Email Input -->
-				<div class="form-textBox">
-					<label for="email">E-mail:</label>
-					<input type="text" id="email" name="email" value="">
-				</div>
+			<!-- Facebook Page -->
+			<a class="formatL" href="https://www.facebook.com/WHOW-Women-Helping-Other-Women-512786552557119/">
+				<button class="links">Visit Our Facebook Page</button>
+			</a>
 
-				<!-- Phone Number Input -->
-				<div class="form-textBox">
-					<label for="pnum">Phone Number:</label>
-					<input type="number" id="pnum" name="pnum" value="">
-				</div>
-
-				<!-- Address Input -->
-				<div class="form-textBox">
-					<label for="address">Address:</label>
-					<input type="text" id="address" name="address" value="">
-				</div>
-
-				<!-- City Input -->
-				<div class="form-textBox">
-					<label for="cname">City:</label>
-					<input type="text" id="cname" name="cname" value="">
-				</div>
-
-				<!-- State Input Options -->
-				<div class="form-dropDown">
-					<label for="state">State:</label>
-					<select name="state">
-						<option value=" " >Please select your state</option>
-						<option>Alabama</option>
-						<option>Alaska</option>
-						<option>Arizona</option>
-						<option>Arkansas</option>
-						<option>California</option>
-						<option>Colorado</option>
-						<option>Connecticut</option>
-						<option>Delaware</option>
-						<option>District of Columbia</option>
-						<option>Florida</option>
-						<option>Georgia</option>
-						<option>Hawaii</option>
-						<option>Idaho</option>
-						<option>Illinois</option>
-						<option>Indiana</option>
-						<option>Iowa</option>
-						<option>Kansas</option>
-						<option>Kentucky</option>
-						<option>Louisiana</option>
-						<option>Maine</option>
-						<option>Maryland</option>
-						<option>Massachusetts</option>
-						<option>Michigan</option>
-						<option>Minnesota</option>
-						<option>Mississippi</option>
-						<option>Missouri</option>
-						<option>Montana</option>
-						<option>Nebraska</option>
-						<option>Nevada</option>
-						<option>New Hampshire</option>
-						<option>New Jersey</option>
-						<option>New Mexico</option>
-						<option>New York</option>
-						<option>North Carolina</option>
-						<option>North Dakota</option>
-						<option>Ohio</option>
-						<option>Oklahoma</option>
-						<option>Oregon</option>
-						<option>Pennsylvania</option>
-						<option>Rhode Island</option>
-						<option>South Carolina</option>
-						<option>South Dakota</option>
-						<option>Tennessee</option>
-						<option>Texas</option>
-						<option>Utah</option>
-						<option>Vermont</option>
-						<option>Virginia</option>
-						<option>Washington</option>
-						<option>West Virginia</option>
-						<option>Wisconsin</option>
-						<option>Wyoming</option>
-					</select>
-				</div>
-
-				<!-- ZIP Code Input -->
-				<div class="form-textBox">
-					<label for="zcode">Zip Code:</label>
-					<input type="number" id="zcode" name="zcode" value="">
-				</div>
-
-				<!-- Receive WHOW Minutes -->
-				<div class="form-radioButton">
-					<label alt="receiveMail">Would you like to receive WHOW Minutes?</label>
-					<div class="list">
-						<div class="radioButtons">
-							<input type="radio" id="yes" name="mail" value="yes">
-							<label for="yes">Yes</label>
-						</div>
-						<div class="radioButtons">
-							<input type="radio" id="no" name="mail" value="no">
-							<label for="no">No</label>
-						</div>
-					</div>
-				</div>
-
-				<!-- Tell us about You Input -->
-				<div class="form-textArea">
-					<label for="about">Tell us about you:</label>
-					<textarea name="message" rows="10" cols="30"></textarea>
-				</div>
-
-				<!-- Submit Button -->
-				<input type="submit">
-
-			</form>
-		
 		</div>
 
 	</main>

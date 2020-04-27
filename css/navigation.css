@@ -98,8 +98,19 @@ nav a.activeN{
   border-radius: 10px;
 }
 
+/* Links */
+a.link {
+  font-family: 'Josefin_Sans';
+  padding: none;
+  text-decoration: none;
+}
 
-/* MOBILE LAYOUT */
+a.link:hover {
+  color: #d9dc9a;
+}
+
+
+/* MOBILE SCREEN */
 @media (max-width: 900px) {
   .toggle-button {
     display: flex;
