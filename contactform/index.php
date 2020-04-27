@@ -1,10 +1,6 @@
 <?php
 
-define('__ROOT__', dirname(dirname(__FILE__)));
-//require_once __DIR__.'/htdocs/contactform/vendor/autoload.php';
-$root = realpath($_SERVER["DOCUMENT_ROOT"]);
-//require_once(__ROOT__.'/autoload.php');
-
+require_once __DIR__.'/vendor/autoload.php';
 require_once __DIR__.'/config.php';
 
 session_start();
@@ -86,14 +82,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
                             <div class="g-recaptcha" data-sitekey="<?= CONTACTFORM_RECAPTCHA_SITE_KEY ?>"></div>
                         </div>
 
-                        <button id="submitRedirect" class="btn btn-primary btn-block">Send Message</button>
-                        <script type="text/javascript">
-                            document.getElementById("submitRedirect").onclick = function () {
-                                location.href = "http://whowrochester.epizy.com/";
-                            };
-                        </script>
-                      
-                        <a href="/index.html" class="btn btn-primary btn-block" role="button" aria-disabled="true">Cancel</a>
+                        <button class="btn btn-primary btn-block">Send Message</button>
                     </form>
                 </div>
             </div>
