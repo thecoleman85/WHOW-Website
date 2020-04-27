@@ -99,7 +99,7 @@ nav a.activeN{
 }
 
 
-/* MOBILE SCREEN */
+/* MOBILE LAYOUT */
 @media (max-width: 900px) {
   .toggle-button {
     display: flex;

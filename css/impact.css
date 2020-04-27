@@ -27,7 +27,7 @@
 }
 
 /* Format Container so Local and international can be side by side */
-.impactContainer{
+.impactContainer {
   display: flex;
   max-width: 800px;
   margin: 40px auto 20px;
@@ -40,10 +40,10 @@
   padding: 20px 0px 20px 20px;
   flex-basis: 45%;
 }
-.list-box h2{
+.list-box h2 {
   color: #ed7d31;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 0px 10px 10px 0px;
 }
 
 /* Action Area */
@@ -55,6 +55,17 @@
   padding-bottom: 20px;
 }
 
-iframe{
+iframe {
   padding-bottom: 40px;
 }
+
+
+/* MOBILE LAYOUT */
+@media (max-width: 900px) {
+  .impactContainer {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+}
+
