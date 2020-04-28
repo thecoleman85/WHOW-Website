@@ -1,6 +1,8 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navLinks = document.getElementsByClassName('nav-links')[0];
+/* Side Nav Bar */
+function openNav() {
+  document.getElementById("Sidenav").style.width = "250px";
+}
 
-toggleButton.addEventListener('click', () => {
-	navLinks.classList.toggle('active');
-});
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+}

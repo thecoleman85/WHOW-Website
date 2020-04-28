@@ -30,7 +30,7 @@
 
 		<!-- Navigation Bar -->
 		<nav class="navbar">
-			<a href="#" class="toggle-button">
+			<a href="#" onclick="openNav()"  class="toggle-button">
 				<span class="bar"></span>
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -44,6 +44,19 @@
 				<li onclick="currentNav(6)"><a href="accessibility.html">Accessibility</a></li>
 			</ul>
 		</nav>
+
+		<!-- hidden Side Nav that is only active when display Max for Screen is reached -->
+		<div id="Sidenav" class="sideNav">
+			<!-- Exit Button -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<a href="index.html">Home</a></li>
+			<a href="about.html">About Us</a></li>
+			<a href="impact.html">See the Impact</a></li>
+			<a href="faq.html">FAQ</a></li>
+			<a href="contact.html">Contact</a></li>
+			<a href="accessibility.html">Accessibility</a></li>
+		</div>
 
 		<!-- Javascript for mobile "hamburger" toggle -->
 		<script src="js/toggle.js"></script>
@@ -65,15 +78,15 @@
 				<h2>Local</h2>
 				<!-- Bullet point list -->
 				<ul>
-					<li>Rochester Health Commons</li>
-					<li>Rochester Women's Shelter</li>
-					<li>Refugee Resettlement Program (through Catholic Charities)</li>
-					<li>Migrant Health Services</li>
-					<li>Medical Mission Warehouse</li>
-					<li>Community Food Response</li>
-					<li>Jeremiah Program</li>
-					<li>Rochester Cares Warming Center</li>
-					<li>Channel One</li>
+					<li><a href="https://www.bethellutheran.org/rochester-health-commons/" rel="noopener noreferrer" target="_blank">Rochester Health Commons</a></li>
+					<li><a href="https://www.womens-shelter.org/" rel="noopener noreferrer" target="_blank">Rochester Women's Shelter</a></li>
+					<li><a href="https://www.ccsomn.org/programs/refugee-resettlement-program/" rel ="noopener noreferrer" target="_blank">Refugee Resettlement Program (through Catholic Charities)</a></li>
+					<li><a href="http://chsiclinics.org/" rel ="noopener noreferrer" target="_blank">Migrant Health Services (aka Community Health Service)</a></li>
+					<li><a href="https://panjiva.com/Rochester-Medical-Mission/1655491" rel ="noopener noreferrer" target="_blank">Rochester Medical Mission</a></li>
+					<li><a href="https://www.communityfoodresponse.org/" rel="noopener noreferrer" target="_blank">Community Food Response</a></li>
+					<li><a href="https://jeremiahprogram.org/rochester/" rel="noopener noreferrer" target="_blank">Jeremiah Program</a></li>
+					<li><a href="https://www.ccsomn.org/programs/warming-centers/rochester-community-warming-center/rochester-cares-rcwc/" rel="noopener noreferrer" target="_blank">Rochester Cares Warming Center</a></li>
+					<li><a href="https://www.helpingfeedpeople.org/" rel="noopener noreferrer" target="_blank">Channel One</a></li>
 				</ul>
 			</div>
 
@@ -83,12 +96,12 @@
 				<h2>International</h2>
 				<!-- Bullet Point List -->
 				<ul>
-					<li>Hands For Humanity (Ecuador)</li>
-					<li>Harvesters Reaching The Nations (South Sudan)</li>
-					<li>Heifer International (Cambodia)</li>
-					<li>Seeds of Wisdom School (South Sudan, Uganda)</li>
-					<li>Global Health Ministries (Worldwide)</li>
-					<li>Zinga Tanzania</li>
+					<li><a href="http://handsforhumanity.com/wordpress/" rel="noopener noreferrer" target="_blank">Hands For Humanity</a> (Ecuador)</li>
+					<li><a href="https://www.hrtn.org/" rel="noopener noreferrer" target="_blank">Harvesters Reaching The Nations(South Sudan, Uganda)</a></li>
+					<li><a href="https://www.heifer.org/" rel="noopener noreferrer" target="_blank">Heifer International Cambodia)</a></li>
+					<li><a href="https://www.seedsofwisdomschool.org" rel="noopener noreferrer" target="_blank">Seeds of Wisdom School (South Sudan, Uganda)</a></li>
+					<li><a href="https://www.ghm.org/" rel="noopener noreferrer" target="_blank">Global Health Ministries (Worldwide)</a></li>
+					<li><a href="https://www.ihptz.org/" rel="noopener noreferrer" target="_blank">International Health Partners - US Inc. (Zinga, Tanzania)</a></li>
 				</ul>
 			</div>
 		</div> <!-- End Container -->
@@ -104,7 +117,7 @@
 	<footer>
 		<!-- Footer Navigation -->
 		<div class="footer-nav">
-			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a> | <a href="accessibility.html">Accessibility</a></p>
 		</div>
 		<!-- Copyright Section -->
 		<div class="copyright">

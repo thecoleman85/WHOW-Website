@@ -30,7 +30,7 @@
 
 		<!-- Navigation Bar -->
 		<nav class="navbar">
-			<a href="#" class="toggle-button">
+			<a href="#" onclick="openNav()" class="toggle-button">
 				<span class="bar"></span>
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -44,6 +44,19 @@
 				<li onclick="currentNav(6)"><a href="accessibility.html">Accessibility</a></li>
 			</ul>
 		</nav>
+
+		<!-- hidden Side Nav that is only active when display Max for Screen is reached -->
+		<div id="Sidenav" class="sideNav">
+			<!-- Exit Button -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<a href="index.html">Home</a></li>
+			<a href="about.html">About Us</a></li>
+			<a href="impact.html">See the Impact</a></li>
+			<a href="faq.html">FAQ</a></li>
+			<a href="contact.html">Contact</a></li>
+			<a href="accessibility.html">Accessibility</a></li>
+		</div>
 
 		<!-- Javascript for mobile "hamburger" toggle -->
 		<script src="js/toggle.js"></script>
@@ -156,7 +169,7 @@
 	<footer>
 		<!-- Footer Navigation -->
 		<div class="footer-nav">
-			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a> | <a href="accessibility.html">Accessibility</a></p>
 		</div>
 		<!-- Copyright Section -->
 		<div class="copyright">

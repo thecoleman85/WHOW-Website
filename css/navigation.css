@@ -59,6 +59,7 @@ header a {
   padding-right: 20px;
 }
 
+/* Main Navigation bar */
 .nav-links {
   display: flex;
   list-style: none;
@@ -80,6 +81,40 @@ nav a.activeN{
   border-bottom: 3px solid #888888;
 }
 
+/* Side Navigation bar */
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 /* Toggle button */
 .toggle-button {
   position: absolute;
@@ -90,6 +125,8 @@ nav a.activeN{
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 .toggle-button .bar {
   width: 100%;
@@ -111,31 +148,19 @@ a.link:hover {
 
 
 /* MOBILE SCREEN */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .toggle-button {
     display: flex;
   }
+
+  /* Stop displaying Main Nav */
   .nav-links {
     display: none;
-    width: 100%;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nav-links li {
-    text-align: center;
-  }
-  .nav-links li a {
-    padding: .5rem 1rem;
-  }
-  .nav-links.active {
-    display: flex;
-  }
+
+  .sideNav {padding-top: 40px;}
+  .sideNav a {font-size: 20px;}
+
 }
 
 
