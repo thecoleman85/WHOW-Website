@@ -30,7 +30,24 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <script>
+    function pageRedirect(){
+     var delay = 5000; // time in milliseconds
+
+     // Display message
+     document.getElementById("submitRedirect").innerHTML = "Please wait, you are redirecting to the new page.";
+     alert("You will be redirected to the home page in 5 seconds.")
+
+     setTimeout(function(){
+      window.location = "www.google.com";
+      return false;
+     },delay);
+
+    }
+    </script>
+
     <title>Contact Us</title>
+
 
     <!-- reCAPTCHA Javascript -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -49,6 +66,10 @@ if (!empty($_SESSION['_contact_form_success'])) {
                     if (!empty($success)) {
                         ?>
                         <div class="alert alert-success">Your message was sent successfully!</div>
+                        <script>
+                        alert("Your message was sent successfully. Press the button to be redirected");
+                        window.location = "/index.html";
+                        </script>
                         <?php
                     }
                     ?>
@@ -61,7 +82,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
                     }
                     ?>
 
-                    <form method="post" action="submit.php">
+                    <form name="emailform" id="emailform" method="post" action="submit.php">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" name="name" id="name" class="form-control">
@@ -87,12 +108,9 @@ if (!empty($_SESSION['_contact_form_success'])) {
                         </div>
 
                         <button id="submitRedirect" class="btn btn-primary btn-block">Send Message</button>
-                        <script type="text/javascript">
-                            document.getElementById("submitRedirect").onclick = function () {
-                                location.href = "http://whowrochester.epizy.com/";
-                            };
-                        </script>
-                      
+
+
+
                         <a href="/index.html" class="btn btn-primary btn-block" role="button" aria-disabled="true">Cancel</a>
                     </form>
                 </div>
