@@ -1,71 +1,124 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles/index.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- Tab Title -->
+	<title>WHOW</title>
+
+	<!-- Link to CSS -->
+	<link rel="stylesheet" href="css/navigation.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="shortcut icon" type="image/icon" href="images/favicon-white.ico"/>
+</head>
 
 
-  <body>
-    <header>
-      <h1>WHOW</h1>
-      <h4>Women Helping Other Women</h4>
-    </header>
+<!-- body and whole page of the website -->
+<body>
+	<!-- Dot indicator js -->
+	<script src="js/imageIndicator.js"></script>
 
-    <nav>
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About us</a></li>
-        <li class="active"><a href="impact.html">See The Impact</a></li>
-        <li class="active"><a href="faq.html">FAQ</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+	<!-- Header of the page with Logo and Nav bar -->
+	<header>
+		<!-- Logo -->
+		<a href="index.html">
+			<div id="logo">
+				<h1>WHOW</h1>
+				<h4>Women Helping Other Women</h4>
+			</div>
+		</a>
 
-    <main>
-      <div class="our content">
-        <h2>"Think Globally, Act Locally"</h2>
-        <img src= "images/DarleneVoeltz_giving hand massage to AIDS patient (1).jpg" alt "" height=500, width=700>
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<ul class="nav-links">
+				<li onclick="currentNav(1)"><a class="activeN" href="index.html">Home</a></li>
+				<li onclick="currentNav(2)"><a href="about.html">About Us</a></li>
+				<li onclick="currentNav(3)"><a href="impact.html">See the Impact</a></li>
+				<li onclick="currentNav(4)"><a href="faq.html">FAQ</a></li>
+				<li onclick="currentNav(5)"><a href="contact.html">Contact</a></li>
+				<li onclick="currentNav(6)"><a href="accessibility.html">Accessibility</a></li>
+			</ul>
+		</nav>
 
-        <p>We believe there are many ways to give...
-          <br>
-          caring, educating others, personal donations, fundraising, and giving time, talents, and treasures.
-          <br>
-        </p>
-        <img src= "images/55568d909df21.image.jpg" alt "" height=700, width=800>
-        <br>
-        <p>WHOW started around a dining room table.  We brainstormed about what each of us felt passionately about in terms of issues in the world affecting women.</p>
-        <br>
-        <br>
-        <p>By the end of the first meeting, we agreed that we wanted to educate ourselves and others.  But we wanted to be a group about ACTION.</p>
-        <p>So, each month we do ACTION ITEMS for local and international nonprofits that help women.</p>
+		<!-- Javascript for mobile "hamburger" toggle -->
+		<script src="js/toggle.js"></script>
 
-        <h2>Oh my goodness!  This is some big text!</h2>
-        <img src= "images/WHOW_diaper making photo.jpg" alt "" height=700, width=800>
-        <h2>HOW A GROUP OF LIKE MINDED WOMEN IMPACTED OVER 20 COUNTRIES IN 2 YEARS RIGHT FROM OUR OWN HOMETOWN.</h2>
+	</header>
 
-        <form>
-          <input type="email", placeholder="Email Address">
-          <button type = "submit">YES, PLEASE!</button>
-        </form>
+	<!-- Main content of the webpage -->
+	<main>
+		<!-- divs for the image gallery -->
+		<div class="slideshow-container">
+			<!-- Space between image and fade is for 2 seperate classes -->
+			<div class="image fade" style="display: block;">
+				<img src="images/handMassage.jpg" alt="WHOW member giving a hand massage to an AIDS patient in Tanzania" height="500" width="700">
+				<div class="sideText">
+					We believe there are many ways to give...
+				</div>
+			</div>
 
-      </div>
+			<div class="image fade" style="display: none;">
+				<img src="images/image1.jpg" alt="Two WHOW members and a Tanzania Women" height="500" width="700">
+				<div class="sideText">
+					Caring, educating others, personal donations, fundraising, and giving time, talents, and treasures.
+				</div>
+			</div>
 
-    </main>
+			<div class="image fade" style="display: none;">
+				<img src="images/diapers.jpg" alt="WHOW members making diapers to be distributed throughout the world." height="500" width="700">
+				<div class="sideText">
+					WHOW started around a dining room table. We brainstormed about what each of us felt passionately about in terms of issues in the world affecting women.
+				</div>
+			</div>
 
-    <footer>
-      <div class="footer-nav">
-        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See The Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
-      </div>
-      <div class="copyright">
-        <p><em>Copyright &copy; 2020 WHOW</em></p>
-      </div>
-    </footer>
+			<div class="image fade" style="display: none;">
+				<img src="images/cleaningKits2.jpg" alt="WHOW members assembling cleaning kits for women leaving Women's Shelter out of Women's Shelter into  their own apartment." height="500" width="700">
+				<div class="sideText">
+					By the end of the first meeting, we agreed that we wanted to educate ourselves and others.  But we wanted to be a group about ACTION.
+				</div>
+			</div>
 
-  </body>
+			<div class="image fade" style="display: none;">
+				<img src="images/tanzania1.jpg" alt="WHOW member participating in a mosquito net project in Tanzania." height="500" width="700">
+				<div class="sideText">
+					So, each month we do ACTION ITEMS for local and international nonprofits that help women.
+				</div>
+			</div>
+
+			<!-- Can Add more images but need more words -->
+		</div> <!-- end Image gallery -->
+
+		<!-- Dot indicator Slideshow -->
+		<div id= "dotsFormat" style="text-align:center">
+			<span class="dot active" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+	</main>
+
+	<!-- Footer / end of page -->
+	<footer>
+		<!-- Footer Navigation -->
+		<div class="footer-nav">
+			<p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="impact.html">See the Impact</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></p>
+		</div>
+		<!-- Copyright Section -->
+		<div class="copyright">
+			<p><em>Copyright &copy; 2020 WHOW</em></p>
+		</div>
+	</footer>
+
+</body>
 
 </html>
+
